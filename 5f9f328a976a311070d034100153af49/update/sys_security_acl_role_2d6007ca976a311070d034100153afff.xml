@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-18 10:01:57</sys_created_on>
+        <sys_id>2d6007ca976a311070d034100153afff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1117801_gym_mngt_workouts.x_1117801_gym_mngt.trainer</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_security_acl display_value="x_1117801_gym_mngt_workouts">ed6007ca976a311070d034100153affc</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_2d6007ca976a311070d034100153afff</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-18 10:01:57</sys_updated_on>
+        <sys_user_role display_value="x_1117801_gym_mngt.trainer" name="x_1117801_gym_mngt.trainer">bcbf764a976a311070d034100153afcb</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

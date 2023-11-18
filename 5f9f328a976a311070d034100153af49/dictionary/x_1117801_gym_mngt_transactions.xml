@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="2cb18f0e976a311070d034100153af0a" extends="task" label="Transactions" max_length="40" name="x_1117801_gym_mngt_transactions" type="collection">
+        <element attributes="encode_utf8=false" label="Member" mandatory="true" max_length="32" name="member" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="Workout Plan" mandatory="true" max_length="32" name="workout_plan" reference="x_1117801_gym_mngt_workout_plans" type="reference"/>
+    </element>
+</database>
