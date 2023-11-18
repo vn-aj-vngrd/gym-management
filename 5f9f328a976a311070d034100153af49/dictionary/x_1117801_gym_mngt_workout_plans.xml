@@ -3,7 +3,7 @@
         <element label="Estimated completion" mandatory="true" max_length="40" name="estimated_completion" type="glide_time"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Short description " mandatory="true" max_length="255" name="short_description" type="string"/>
-        <element attributes="encode_utf8=false" label="Trainer" mandatory="true" max_length="32" name="trainer" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="Trainer" max_length="32" name="trainer" reference="sys_user" type="reference"/>
         <element attributes="encode_utf8=false" label="Workouts" mandatory="true" max_length="4000" name="workouts" reference="x_1117801_gym_mngt_workouts" type="glide_list"/>
         <index name="index">
             <element name="trainer"/>
