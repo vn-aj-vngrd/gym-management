@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item">
+    <sp_rectangle_menu_item action="DELETE">
+        <active>true</active>
+        <color>default</color>
+        <condition/>
+        <display_1/>
+        <display_2/>
+        <display_date/>
+        <filter/>
+        <glyph>empty</glyph>
+        <hint/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <label>My Enrolled Members</label>
+        <order>400</order>
+        <record_script/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <sp_page display_value="my_enrolled_members">e5d119c6977e711070d034100153afe5</sp_page>
+        <sp_rectangle_menu display_value="Gym Trainer Menu">1a0078f5977a311070d034100153af1e</sp_rectangle_menu>
+        <sp_rectangle_menu_item/>
+        <sys_class_name>sp_rectangle_menu_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-30 12:22:55</sys_created_on>
+        <sys_id>7f83d54a977e711070d034100153af86</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>My Enrolled Members</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>sp_rectangle_menu_item_7f83d54a977e711070d034100153af86</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-30 12:25:37</sys_updated_on>
+        <table/>
+        <type>page</type>
+        <url/>
+        <url_target/>
+    </sp_rectangle_menu_item>
+    <sys_translated_text action="DELETE" query="documentkey=7f83d54a977e711070d034100153af86"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gym Management">5f9f328a976a311070d034100153af49</application>
+        <file_path/>
+        <instance_id>ad1a86eddb54e9103050ac44d496196f</instance_id>
+        <instance_name>dev147213</instance_name>
+        <name>sp_rectangle_menu_item_7f83d54a977e711070d034100153af86</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item"><sp_rectangle_menu_item action="INSERT_OR_UPDATE"><active>true</active><color>default</color><condition/><display_1/><display_2/><display_date/><filter/><glyph>empty</glyph><hint/><kb_article/><kb_category/><kb_topic/><label>My Enrolled Members</label><order>400</order><record_script/><sc_cat_item/><sc_category/><short_description/><sp_page display_value="my_enrolled_members">e5d119c6977e711070d034100153afe5</sp_page><sp_rectangle_menu display_value="Gym Trainer Menu">1a0078f5977a311070d034100153af1e</sp_rectangle_menu><sp_rectangle_menu_item/><sys_class_name>sp_rectangle_menu_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-11-30 12:22:55</sys_created_on><sys_id>7f83d54a977e711070d034100153af86</sys_id><sys_mod_count>2</sys_mod_count><sys_name>My Enrolled Members</sys_name><sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package><sys_policy/><sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope><sys_update_name>sp_rectangle_menu_item_7f83d54a977e711070d034100153af86</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-11-30 12:25:37</sys_updated_on><table/><type>page</type><url/><url_target/></sp_rectangle_menu_item><sys_translated_text action="delete_multiple" query="documentkey=7f83d54a977e711070d034100153af86"/></record_update>]]></payload>
+        <payload_hash>-2050082112</payload_hash>
+        <record_name>My Enrolled Members</record_name>
+        <reverted_from/>
+        <source>9348038697aa311070d034100153af46</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-30 12:25:37</sys_created_on>
+        <sys_id>c754998a977e711070d034100153aff4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c203117ce0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-30 12:25:37</sys_updated_on>
+        <type>Menu Item</type>
+        <update_guid>8f54998ab07e7110d501cee5d1a275f3</update_guid>
+        <update_guid_history>8f54998ab07e7110d501cee5d1a275f3:-2050082112,7ce3994a957e71105b6789e1d297a20d:-455985821,b3b39d4a847e711032fe9542ad64c595:107860953</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="My Enrolled Members">f67411ca977e711070d034100153afc8</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-30 12:26:08</sys_created_on>
+        <sys_db_object display_value="" name="sp_rectangle_menu_item">sp_rectangle_menu_item</sys_db_object>
+        <sys_id>95010127492b4cb09eab4a71685ee240</sys_id>
+        <sys_metadata>7f83d54a977e711070d034100153af86</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Enrolled Members</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_scope_delete display_value="">6ba2a1389bb44300b26741b3861b1000</sys_scope_delete>
+        <sys_update_name>sp_rectangle_menu_item_7f83d54a977e711070d034100153af86</sys_update_name>
+        <sys_update_version display_value="sp_rectangle_menu_item_7f83d54a977e711070d034100153af86">c754998a977e711070d034100153aff4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-30 12:26:08</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

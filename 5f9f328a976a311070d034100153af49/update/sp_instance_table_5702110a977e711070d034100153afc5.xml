@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_table">
+    <sp_instance_table action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <display_field/>
+        <field_list>member,workout_plan.short_description</field_list>
+        <filter table="x_1117801_gym_mngt_transactions">workout_plan.trainer=javascript:gs.getUserID()<item endquery="false" field="workout_plan.trainer" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getUserID()"/>
+        </filter>
+        <glyph>user</glyph>
+        <id/>
+        <maximum_entries>999</maximum_entries>
+        <order>1</order>
+        <order_by>active</order_by>
+        <order_direction>desc</order_direction>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">3e02110a977e711070d034100153afaf</sp_column>
+        <sp_page/>
+        <sp_widget display_value="Data Table from Instance Definition">38058ff1cb11020000f8d856634c9c8c</sp_widget>
+        <sys_class_name>sp_instance_table</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-30 12:15:32</sys_created_on>
+        <sys_id>5702110a977e711070d034100153afc5</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>My Enrolled Members</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>sp_instance_table_5702110a977e711070d034100153afc5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-30 12:57:24</sys_updated_on>
+        <table>x_1117801_gym_mngt_transactions</table>
+        <title>My Enrolled Members</title>
+        <url/>
+        <widget_parameters/>
+    </sp_instance_table>
+    <sys_translated_text action="delete_multiple" query="documentkey=5702110a977e711070d034100153afc5"/>
+</record_update>

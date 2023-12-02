@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>true</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1117801_gym_mngt_transactions</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message><![CDATA[<p>test</p>]]></message>
+        <name>My Enrolled Members</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+    // Include the script
+//     var filterScript = new MyFilterScriptInclude();
+
+//     // Check if the record should be displayed
+//     if (!filterScript.shouldDisplayRecord(current)) {
+//         // If not, cancel the query
+//         gs.addErrorMessage('This record does not meet the filter criteria.');
+//         current.setAbortAction(true);
+//     }
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-27 14:04:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>280e028d973a311070d034100153af8f</sys_id>
+        <sys_mod_count>91</sys_mod_count>
+        <sys_name>My Enrolled Members</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>sys_script_280e028d973a311070d034100153af8f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-28 00:38:01</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=280e028d973a311070d034100153af8f"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gym Management">5f9f328a976a311070d034100153af49</application>
+        <file_path/>
+        <instance_id>ad1a86eddb54e9103050ac44d496196f</instance_id>
+        <instance_name>dev147213</instance_name>
+        <name>sys_script_280e028d973a311070d034100153af8f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;false&lt;/action_insert&gt;&lt;action_query&gt;true&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_1117801_gym_mngt_transactions&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message&gt;&lt;![CDATA[&lt;p&gt;test&lt;/p&gt;]]&gt;&lt;/message&gt;&lt;name&gt;My Enrolled Members&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+    // Include the script
+//     var filterScript = new MyFilterScriptInclude();
+
+//     // Check if the record should be displayed
+//     if (!filterScript.shouldDisplayRecord(current)) {
+//         // If not, cancel the query
+//         gs.addErrorMessage('This record does not meet the filter criteria.');
+//         current.setAbortAction(true);
+//     }
+})(current, previous);
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-11-27 14:04:26&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;280e028d973a311070d034100153af8f&lt;/sys_id&gt;&lt;sys_mod_count&gt;91&lt;/sys_mod_count&gt;&lt;sys_name&gt;My Enrolled Members&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Gym Management" source="x_1117801_gym_mngt"&gt;5f9f328a976a311070d034100153af49&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Gym Management"&gt;5f9f328a976a311070d034100153af49&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_280e028d973a311070d034100153af8f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-11-28 00:38:01&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=280e028d973a311070d034100153af8f"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1934776933</payload_hash>
+        <record_name>My Enrolled Members</record_name>
+        <reverted_from/>
+        <source>9348038697aa311070d034100153af46</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-28 00:38:02</sys_created_on>
+        <sys_id>d63f98dd97b2711070d034100153afd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c135c8eae0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-28 00:38:02</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>1e3f98dda4b2711033a8ba4f449f11d4</update_guid>
+        <update_guid_history>1e3f98dda4b2711033a8ba4f449f11d4:-1934776933,172f1cdd17b27110160ac1730e6a7013:174341735,4d1f90dda9b271103e38dede3660f2a7:-469498412,f5fe949dc8b27110742c5bf460075acd:1259059537,14fcd05df3b2711038605b5b0715907c:98098681,9a0c901dbcb271102b799ec67a4b3963:1512727248,6ffb501da0b2711003227aa4cbc7ef2c:1297314690,c8fbdc59d6b271108b6cbf539907ea3f:1289977196,1cebd899adb27110f15e7eb11ce82bc5:125876837,16ca5099d4b27110ba8315b549ebe748:1017666175,79ba5c59bfb271105feaec0b0c886210:-1815191900,1b4a9c59d1b271108dc655fe88f35378:-746234093,0c2a9c59edb2711081fa32b7c17d0025:-859489749,66a91059c6b271108049f2d9b5b373b8:1675423929,71991059feb27110ed7f348fb39a7c9c:2135565996,fd89505908b271105ad1d74f1304002d:1045129404,b279105925b2711051d7660617b0bc03:-598311312,c659901924b27110db74f8a443f12362:1675423929,9dd8101917b271104551146df9e150d1:102390120,0fb8dcd504b27110498c2e6288e676db:1342256216,7ca81cd537b271102ce6961c28b55e0d:-1811819522,9478109525b27110a911e9b3f6baef38:1266896969,1e48d05507b2711074f05ec1d7439175:-30906782,93181095dfb27110317d98636cc51c87:426470384,ba08905560b27110ac91392e937efeb5:428045866,6de69055a6b271104b833e1242ded049:-1254483264,f7261055aeb27110824457803778fd77:-629836634,d1165c154bb27110ec534ee508b00a7b:-2146211739,7bf51c1517b2711008b5e9bfcc4e1cc6:1443409366,32e594159fb27110863aad8c748d7a7a:-952676784,84d55815d1b2711063f9382a548e01ce:-1352685526,8d95541563b271108ab6753ed81baa30:-1763460049,1a9450d1b9b27110f3e1093826bf8a6c:-1204983056,fd749c9145b271103e56faf41cdd8e0a:1833819043,8b645891bdb271103610d0eb286204ff:-1170883597,db545c9179b271101072612d23fbddb7:-1383964327,f5e31091f1b271102853481be8d6534a:-1204983056,c3b390916fb27110da29078b1fe2921c:-1909278326,41a3545127b2711037e30a9e94b4895d:-99081555,0b0390516eb271103a7ca4ded584f455:-1339769554,b6a258114ab271105610fceaf75255fd:428045866,0f72d411f2b2711066698afc014c3acb:418598959,9b425411a4b27110270f0b670e854ebb:1769777856,8402989d64727110d185bc1de2124e20:1111430598,5f6154dd8f7271104c71e1bb97f55b81:-672359575,8ce0989d00727110b7a6210356588215:-1211230998,35c37649abfa3110e2c9ec104b45da8a:-1545783050,bf83b24944fa3110d50fe9090df2e346:597452292,c7d27209bffa311046d10487a18f2498:-982259010,ee82bac54afa3110b576304c7e6c70ea:1671853758,a4427ac5adfa3110c3fc4b7d7193cc25:478484929,0c61b285ccfa31109cfa8c311bfea9a1:1033154570,fc41f28592fa3110c23ec6d0572a1b4d:-477010425,b1317685effa31105135779b6086ac30:-2125218765,4d113e4513fa3110f21fde91ea442590:1764232489,a5c03e453cfa3110e82c5256bc9d3789:-2106252749,ee90b645a8fa3110b3a629ca83bf54aa:1100533645,f0703245e1fa31100c1a95e252961e13:-1663655392,2a50fe05f5fa3110a908e40b206f907c:-1109579572,87103e05e0fa3110e4a5f19d5991c976:534110449,c2ef66c14ffa3110601ffbf532ad3c5e:-961699261,39beee81aefa31103f308d0f851f5e15:804844673,aa7e2641ccfa311005b34c0c231dce12:1945534361,652de2415bfa3110522e5112fdef468d:-2003762477,eafca2412cfa3110cce08ed320e1a4bc:1562842133,2fece601c5fa31103f00dcc66d2ee13f:195914559,617c2a014dfa311007a3a66541acbdbb:-2123805070,c86c2acd13ba311039d09feeb89091eb:-38071402,cbbb2acdd0ba3110f0d21a6b8d86815f:1832202764,026bee8d83ba31105b099ef75677bc87:-1678506660,742bae8dfaba31106657a1c2106791ca:626279823,f5ca628db8ba31103fafc6f32c53a2e6:-1842251132,7aba268d81ba3110244dec3a2358c4d8:1812680905,0b1aa64d2aba3110326893b909cc0618:2095057649,c9a92a0da0ba31102ae1fdf5d7e631d0:-1678506660,44696a0d31ba3110bf9b8b259dc4dd49:-660078697,5939e60d8eba3110db6dec6eebf75264:1930874843,0d29a60df0ba3110f5fdb14f7caf355c:900733293,63e8eec975ba3110f56d0fec834219f6:-1310717418,9bc82689adba311058d5022a22f96c94:-1617496174,6558a6c9f1ba311089f8a38674b8bf9d:-1328021443,a447e289bbba3110fe9f7e222d09af61:1711267521,ce272e492dba31107ae1a613196e1803:-40742701,a4b6a649d8ba3110a9dbd1b3cce1566e:1684706026,3466a24995ba311081f613866ea2ec15:-420329701,84e5eec508ba311024ca1c32d7c39584:-397906313,0d55e6c528ba31102c276a0fbf5da293:1360428952,5fc3aa4557ba3110ddbbb27801c088c4:-512707517,35736a451fba3110a919ddaca63d7c7b:-1910739216,e751a2c1e8ba31102d030902576913f7:2031303426,913e028d823a31100ea19fc0b38571fb:50849224</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-28 00:38:38</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>0b770943d34e4217adee5f3662c88b79</sys_id>
+        <sys_metadata>280e028d973a311070d034100153af8f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Enrolled Members</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_parent display_value="Transactions">2cb18f0e976a311070d034100153af0a</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_scope_delete display_value="">6ba2a1389bb44300b26741b3861b1000</sys_scope_delete>
+        <sys_update_name>sys_script_280e028d973a311070d034100153af8f</sys_update_name>
+        <sys_update_version display_value="sys_script_280e028d973a311070d034100153af8f">d63f98dd97b2711070d034100153afd5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-28 00:38:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

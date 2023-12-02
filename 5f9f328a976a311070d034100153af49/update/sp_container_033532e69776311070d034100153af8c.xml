@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="INSERT_OR_UPDATE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Created Workout Plans per Month - Container 1</name>
+        <order>1</order>
+        <semantic_tag/>
+        <sp_page display_value="created_workout_plans_per_month">c73532e69776311070d034100153af87</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-02 08:45:50</sys_created_on>
+        <sys_id>033532e69776311070d034100153af8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created Workout Plans per Month - Container 1</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>sp_container_033532e69776311070d034100153af8c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-02 08:45:50</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+</record_update>

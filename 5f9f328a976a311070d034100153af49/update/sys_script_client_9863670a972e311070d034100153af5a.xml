@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Enroll WP Once On Submit</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+    // Get the current user's ID
+    var userId = g_user.userID;
+
+    // Get the current table name
+    var tableName = g_form.getTableName();
+
+    // Get the GlideRecord object for the current form
+    var gr = new GlideRecord(tableName);
+    gr.addQuery('user', userId);
+    gr.query();
+
+    // Check if there are any records for the current user
+    if (gr.next()) {
+        // There are records for the current user, mark them as completed
+        gr.setValue('status', 'completed'); // Assuming 'status' is the field you want to update
+        gr.update();
+        alert('Records for the current user found and marked as completed.');
+    } else {
+        // No records found for the current user, invalidate submission
+        alert('No records found for the current user. Submission invalidated.');
+        g_form.setAbortAction(true);
+    }
+
+    // Allow the form submission to proceed
+    return true;
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-18 12:40:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9863670a972e311070d034100153af5a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Enroll WP Once On Submit</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>sys_script_client_9863670a972e311070d034100153af5a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-18 12:42:37</sys_updated_on>
+        <table>x_1117801_gym_mngt_transactions</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

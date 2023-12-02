@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <misc>1</misc>
+        <order>200</order>
+        <published_ref/>
+        <question display_value="Choose a Workout">506e5cfd97f6311070d034100153afde</question>
+        <rec_misc>0</rec_misc>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-29 14:03:54</sys_created_on>
+        <sys_id>cf2164b1973a311070d034100153affd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Medium</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>question_choice_cf2164b1973a311070d034100153affd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-29 14:03:54</sys_updated_on>
+        <text>Medium</text>
+        <value>2</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=cf2164b1973a311070d034100153affd"/>
+    <fx_price action="DELETE">
+        <amount>1</amount>
+        <currency display_value="USD">USD</currency>
+        <field>misc</field>
+        <id>cf2164b1973a311070d034100153affd</id>
+        <parent/>
+        <reference_amount>1</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-29 14:03:57</sys_created_on>
+        <sys_id>f14128f1973a311070d034100153af1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-29 14:03:57</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="DELETE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_misc</field>
+        <id>cf2164b1973a311070d034100153affd</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-29 14:03:57</sys_created_on>
+        <sys_id>b94128f1973a311070d034100153af1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-29 14:03:57</sys_updated_on>
+        <table>question_choice</table>
+        <type>calculated</type>
+    </fx_price>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gym Management">5f9f328a976a311070d034100153af49</application>
+        <file_path/>
+        <instance_id>ad1a86eddb54e9103050ac44d496196f</instance_id>
+        <instance_name>dev147213</instance_name>
+        <name>question_choice_cf2164b1973a311070d034100153affd</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><misc>1</misc><order>200</order><published_ref/><question display_value="Choose a Workout">506e5cfd97f6311070d034100153afde</question><rec_misc>0</rec_misc><sys_class_name>question_choice</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-11-29 14:03:54</sys_created_on><sys_id>cf2164b1973a311070d034100153affd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Medium</sys_name><sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package><sys_policy/><sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope><sys_update_name>question_choice_cf2164b1973a311070d034100153affd</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-11-29 14:03:54</sys_updated_on><text>Medium</text><value>2</value></question_choice><fx_price action="delete_multiple" query="id=cf2164b1973a311070d034100153affd"/><fx_price action="INSERT_OR_UPDATE"><amount>1</amount><currency display_value="USD">USD</currency><field>misc</field><id>cf2164b1973a311070d034100153affd</id><parent/><reference_amount>1</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2023-11-29 14:03:57</sys_created_on><sys_id>f14128f1973a311070d034100153af1c</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-11-29 14:03:57</sys_updated_on><table>question_choice</table><type>calculated</type></fx_price><fx_price action="INSERT_OR_UPDATE"><amount>0</amount><currency display_value="USD">USD</currency><field>rec_misc</field><id>cf2164b1973a311070d034100153affd</id><parent/><reference_amount>0</reference_amount><reference_currency display_value="USD">USD</reference_currency><sys_created_by>admin</sys_created_by><sys_created_on>2023-11-29 14:03:57</sys_created_on><sys_id>b94128f1973a311070d034100153af1b</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-11-29 14:03:57</sys_updated_on><table>question_choice</table><type>calculated</type></fx_price></record_update>]]></payload>
+        <payload_hash>-451350711</payload_hash>
+        <record_name>Medium</record_name>
+        <reverted_from/>
+        <source>9348038697aa311070d034100153af46</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-29 14:03:57</sys_created_on>
+        <sys_id>bd4128f1973a311070d034100153af53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c1b64c2bb0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-29 14:03:57</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>f14128f1a23a311072c269a5cdae9553</update_guid>
+        <update_guid_history>f14128f1a23a311072c269a5cdae9553:-451350711</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Medium">b4712cf1973a311070d034100153af66</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-29 14:04:42</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>0c59d172a8664b709337822c50a76240</sys_id>
+        <sys_metadata>cf2164b1973a311070d034100153affd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Medium</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_parent display_value="Choose a Workout">506e5cfd97f6311070d034100153afde</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_scope_delete display_value="">6ba2a1389bb44300b26741b3861b1000</sys_scope_delete>
+        <sys_update_name>question_choice_cf2164b1973a311070d034100153affd</sys_update_name>
+        <sys_update_version display_value="question_choice_cf2164b1973a311070d034100153affd">bd4128f1973a311070d034100153af53</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-29 14:04:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

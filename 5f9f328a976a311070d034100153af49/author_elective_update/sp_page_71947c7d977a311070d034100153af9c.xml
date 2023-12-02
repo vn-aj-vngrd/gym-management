@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="DELETE">
+        <category>custom</category>
+        <css/>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <human_readable_url_structure/>
+        <id>gym_header_menu</id>
+        <internal>false</internal>
+        <omit_watcher>false</omit_watcher>
+        <public>false</public>
+        <roles/>
+        <seo_script/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-29 15:28:20</sys_created_on>
+        <sys_id>71947c7d977a311070d034100153af9c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>gym_header_menu</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>sp_page_71947c7d977a311070d034100153af9c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-29 15:28:20</sys_updated_on>
+        <title>GYM_HEADER_MENU - Test Page</title>
+        <use_seo_script>false</use_seo_script>
+    </sp_page>
+    <sys_translated_text action="DELETE" query="documentkey=71947c7d977a311070d034100153af9c"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gym Management">5f9f328a976a311070d034100153af49</application>
+        <file_path/>
+        <instance_id>ad1a86eddb54e9103050ac44d496196f</instance_id>
+        <instance_name>dev147213</instance_name>
+        <name>sp_page_71947c7d977a311070d034100153af9c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><human_readable_url_structure/><id>gym_header_menu</id><internal>false</internal><omit_watcher>false</omit_watcher><public>false</public><roles/><seo_script/><short_description/><sys_class_name>sp_page</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-11-29 15:28:20</sys_created_on><sys_id>71947c7d977a311070d034100153af9c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>gym_header_menu</sys_name><sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package><sys_policy/><sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope><sys_update_name>sp_page_71947c7d977a311070d034100153af9c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-11-29 15:28:20</sys_updated_on><title>GYM_HEADER_MENU - Test Page</title><use_seo_script>false</use_seo_script></sp_page><sys_translated_text action="delete_multiple" query="documentkey=71947c7d977a311070d034100153af9c"/></record_update>]]></payload>
+        <payload_hash>1242330008</payload_hash>
+        <record_name>gym_header_menu</record_name>
+        <reverted_from/>
+        <source>9348038697aa311070d034100153af46</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-29 15:28:20</sys_created_on>
+        <sys_id>c2947c7d977a311070d034100153af9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c1bb205b40000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-29 15:28:20</sys_updated_on>
+        <type>Page</type>
+        <update_guid>0a947c7dc27a3110a52b76de07ef4d9d</update_guid>
+        <update_guid_history>0a947c7dc27a3110a52b76de07ef4d9d:1242330008</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="gym_header_menu">0999250a97fe711070d034100153af35</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-30 13:58:20</sys_created_on>
+        <sys_db_object display_value="" name="sp_page">sp_page</sys_db_object>
+        <sys_id>25e1e88054b74109abc8a628423f02f9</sys_id>
+        <sys_metadata>71947c7d977a311070d034100153af9c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>gym_header_menu</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_scope_delete display_value="">6ba2a1389bb44300b26741b3861b1000</sys_scope_delete>
+        <sys_update_name>sp_page_71947c7d977a311070d034100153af9c</sys_update_name>
+        <sys_update_version display_value="sp_page_71947c7d977a311070d034100153af9c">c2947c7d977a311070d034100153af9e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-30 13:58:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

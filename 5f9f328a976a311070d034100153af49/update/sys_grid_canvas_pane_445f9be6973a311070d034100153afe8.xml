@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+        <grid_canvas display_value="PA Created workout plan - New Tab">7119658697fe711070d034100153afc8</grid_canvas>
+        <height>10</height>
+        <portal_widget display_value="Created 2023-12-02 03:49:40">045f9be6973a311070d034100153afe1</portal_widget>
+        <posx>0</posx>
+        <posy>0</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-02 11:49:40</sys_created_on>
+        <sys_id>445f9be6973a311070d034100153afe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>7119658697fe711070d034100153afc8</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_445f9be6973a311070d034100153afe8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-02 11:49:40</sys_updated_on>
+        <width>12</width>
+    </sys_grid_canvas_pane>
+</record_update>

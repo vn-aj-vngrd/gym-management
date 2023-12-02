@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_tabs">
+    <pa_tabs action="INSERT_OR_UPDATE">
+        <canvas_page display_value="PA Created workout plan - New Tab">7119658697fe711070d034100153afc8</canvas_page>
+        <name>Created workout plan - New Tab</name>
+        <page/>
+        <sys_class_name>pa_tabs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-30 13:56:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7119e5c697fe711070d034100153afd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Created workout plan - New Tab</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>pa_tabs_7119e5c697fe711070d034100153afd1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-30 13:56:11</sys_updated_on>
+    </pa_tabs>
+</record_update>

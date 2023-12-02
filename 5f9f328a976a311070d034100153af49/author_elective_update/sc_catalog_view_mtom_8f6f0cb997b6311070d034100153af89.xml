@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_catalog_view_mtom">
+    <sc_catalog_view_mtom action="DELETE">
+        <default>true</default>
+        <sc_catalog display_value="Member Order">094fc8b997b6311070d034100153af10</sc_catalog>
+        <sys_class_name>sc_catalog_view_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-29 12:45:57</sys_created_on>
+        <sys_id>8f6f0cb997b6311070d034100153af89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Member Order.catalog_member_order</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_portal_page display_value="catalog_member_order">c76f0cb997b6311070d034100153af88</sys_portal_page>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>sc_catalog_view_mtom_8f6f0cb997b6311070d034100153af89</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-29 12:45:57</sys_updated_on>
+    </sc_catalog_view_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gym Management">5f9f328a976a311070d034100153af49</application>
+        <file_path/>
+        <instance_id>ad1a86eddb54e9103050ac44d496196f</instance_id>
+        <instance_name>dev147213</instance_name>
+        <name>sc_catalog_view_mtom_8f6f0cb997b6311070d034100153af89</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_catalog_view_mtom"><sc_catalog_view_mtom action="INSERT_OR_UPDATE"><default>true</default><sc_catalog display_value="Member Order">094fc8b997b6311070d034100153af10</sc_catalog><sys_class_name>sc_catalog_view_mtom</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-11-29 12:45:57</sys_created_on><sys_id>8f6f0cb997b6311070d034100153af89</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Member Order.catalog_member_order</sys_name><sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package><sys_policy/><sys_portal_page display_value="catalog_member_order">c76f0cb997b6311070d034100153af88</sys_portal_page><sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope><sys_update_name>sc_catalog_view_mtom_8f6f0cb997b6311070d034100153af89</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-11-29 12:45:57</sys_updated_on></sc_catalog_view_mtom></record_update>]]></payload>
+        <payload_hash>453473778</payload_hash>
+        <record_name>Member Order.catalog_member_order</record_name>
+        <reverted_from/>
+        <source>9348038697aa311070d034100153af46</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-29 12:45:57</sys_created_on>
+        <sys_id>1b6f0cb997b6311070d034100153af8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c1b1d597d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-29 12:45:57</sys_updated_on>
+        <type>Catalog Portal Page</type>
+        <update_guid>5f6f0cb965b631105b9d5e139da3048b</update_guid>
+        <update_guid_history>5f6f0cb965b631105b9d5e139da3048b:453473778</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Member Order.catalog_member_order">700aad0a97fe711070d034100153afb3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-30 14:00:13</sys_created_on>
+        <sys_db_object display_value="" name="sc_catalog_view_mtom">sc_catalog_view_mtom</sys_db_object>
+        <sys_id>20d6bae7563c4fc097aca644aca67c01</sys_id>
+        <sys_metadata>8f6f0cb997b6311070d034100153af89</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Member Order.catalog_member_order</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_parent display_value="Gym Catalog">094fc8b997b6311070d034100153af10</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_scope_delete display_value="">6ba2a1389bb44300b26741b3861b1000</sys_scope_delete>
+        <sys_update_name>sc_catalog_view_mtom_8f6f0cb997b6311070d034100153af89</sys_update_name>
+        <sys_update_version display_value="sc_catalog_view_mtom_8f6f0cb997b6311070d034100153af89">1b6f0cb997b6311070d034100153af8c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-30 14:00:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

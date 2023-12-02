@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1117801_gym_mngt.MyFilterScriptInclude</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>MyFilterScriptInclude</name>
+        <script><![CDATA[// Example script include: MyFilterScriptInclude
+var MyFilterScriptInclude = Class.create();
+MyFilterScriptInclude.prototype = {
+    initialize: function () {},
+
+    // Function to check if the record should be displayed
+    shouldDisplayRecord: function (current) {
+        // Your complex filtering logic here
+        return current.workout_plan == "WP0001002";
+    },
+
+    type: 'MyFilterScriptInclude'
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-28 00:27:54</sys_created_on>
+        <sys_id>9bcc105d97b2711070d034100153afcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MyFilterScriptInclude</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>sys_script_include_9bcc105d97b2711070d034100153afcc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-28 00:27:54</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gym Management">5f9f328a976a311070d034100153af49</application>
+        <file_path/>
+        <instance_id>ad1a86eddb54e9103050ac44d496196f</instance_id>
+        <instance_name>dev147213</instance_name>
+        <name>sys_script_include_9bcc105d97b2711070d034100153afcc</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1117801_gym_mngt.MyFilterScriptInclude&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;MyFilterScriptInclude&lt;/name&gt;&lt;script&gt;&lt;![CDATA[// Example script include: MyFilterScriptInclude
+var MyFilterScriptInclude = Class.create();
+MyFilterScriptInclude.prototype = {
+    initialize: function () {},
+
+    // Function to check if the record should be displayed
+    shouldDisplayRecord: function (current) {
+        // Your complex filtering logic here
+        return current.workout_plan == "WP0001002";
+    },
+
+    type: 'MyFilterScriptInclude'
+};
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-11-28 00:27:54&lt;/sys_created_on&gt;&lt;sys_id&gt;9bcc105d97b2711070d034100153afcc&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;MyFilterScriptInclude&lt;/sys_name&gt;&lt;sys_package display_value="Gym Management" source="x_1117801_gym_mngt"&gt;5f9f328a976a311070d034100153af49&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Gym Management"&gt;5f9f328a976a311070d034100153af49&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_9bcc105d97b2711070d034100153afcc&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-11-28 00:27:54&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2018813961</payload_hash>
+        <record_name>MyFilterScriptInclude</record_name>
+        <reverted_from/>
+        <source>9348038697aa311070d034100153af46</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-28 00:27:54</sys_created_on>
+        <sys_id>0eecd0d997b2711070d034100153af1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c13534a2c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-28 00:27:54</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>42ecd0d986b2711008145f98cc6de11f</update_guid>
+        <update_guid_history>42ecd0d986b2711008145f98cc6de11f:2018813961</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-28 00:38:48</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>1fe26ac10f7b4dbb8bda3740b88507a9</sys_id>
+        <sys_metadata>9bcc105d97b2711070d034100153afcc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>MyFilterScriptInclude</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_scope_delete display_value="">6ba2a1389bb44300b26741b3861b1000</sys_scope_delete>
+        <sys_update_name>sys_script_include_9bcc105d97b2711070d034100153afcc</sys_update_name>
+        <sys_update_version display_value="sys_script_include_9bcc105d97b2711070d034100153afcc">0eecd0d997b2711070d034100153af1f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-28 00:38:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

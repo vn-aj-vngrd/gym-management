@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="user_criteria">
+    <user_criteria action="DELETE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <company/>
+        <department/>
+        <group/>
+        <location/>
+        <match_all>false</match_all>
+        <name>Gym Member</name>
+        <role name="gym_member">fcbf7e4a976a311070d034100153af28</role>
+        <script><![CDATA[/** Scripted User Criteria is not cached, and evaluated everytime, so performance is dependent on the script.
+* Populate `answer` with true/false or evaluate to true/false
+* The script is evaluated in the scope the user criteria is defined
+* Don't use `current` in the script or populate the variable
+* Don't use `gs.getUser()` or  `gs.getUserID()`, 
+* instead use `user_id` which contains the user sys_id against whom the evaluation is happening.
+*/]]></script>
+        <short_description/>
+        <sys_class_name>user_criteria</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-29 14:41:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ceb9acbd973a311070d034100153aff6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Gym Member</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>user_criteria_ceb9acbd973a311070d034100153aff6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-29 14:41:25</sys_updated_on>
+        <user/>
+    </user_criteria>
+    <sys_translated_text action="DELETE" query="documentkey=ceb9acbd973a311070d034100153aff6"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gym Management">5f9f328a976a311070d034100153af49</application>
+        <file_path/>
+        <instance_id>ad1a86eddb54e9103050ac44d496196f</instance_id>
+        <instance_name>dev147213</instance_name>
+        <name>user_criteria_ceb9acbd973a311070d034100153aff6</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="user_criteria"&gt;&lt;user_criteria action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;advanced&gt;false&lt;/advanced&gt;&lt;company/&gt;&lt;department/&gt;&lt;group/&gt;&lt;location/&gt;&lt;match_all&gt;false&lt;/match_all&gt;&lt;name&gt;Gym Member&lt;/name&gt;&lt;role name="gym_member"&gt;fcbf7e4a976a311070d034100153af28&lt;/role&gt;&lt;script&gt;&lt;![CDATA[/** Scripted User Criteria is not cached, and evaluated everytime, so performance is dependent on the script.
+* Populate `answer` with true/false or evaluate to true/false
+* The script is evaluated in the scope the user criteria is defined
+* Don't use `current` in the script or populate the variable
+* Don't use `gs.getUser()` or  `gs.getUserID()`, 
+* instead use `user_id` which contains the user sys_id against whom the evaluation is happening.
+*/]]&gt;&lt;/script&gt;&lt;short_description/&gt;&lt;sys_class_name&gt;user_criteria&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-11-29 14:41:25&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;ceb9acbd973a311070d034100153aff6&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Gym Member&lt;/sys_name&gt;&lt;sys_package display_value="Gym Management" source="x_1117801_gym_mngt"&gt;5f9f328a976a311070d034100153af49&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Gym Management"&gt;5f9f328a976a311070d034100153af49&lt;/sys_scope&gt;&lt;sys_update_name&gt;user_criteria_ceb9acbd973a311070d034100153aff6&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-11-29 14:41:25&lt;/sys_updated_on&gt;&lt;user/&gt;&lt;/user_criteria&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=ceb9acbd973a311070d034100153aff6"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>47507012</payload_hash>
+        <record_name>Gym Member</record_name>
+        <reverted_from/>
+        <source>9348038697aa311070d034100153af46</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-29 14:41:26</sys_created_on>
+        <sys_id>b6d960fd973a311070d034100153afa4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c1b8712590000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-29 14:41:26</sys_updated_on>
+        <type>User Criteria</type>
+        <update_guid>fad960fdb23a31109c287cc5058a96a3</update_guid>
+        <update_guid_history>fad960fdb23a31109c287cc5058a96a3:47507012</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Gym Member">113ba071977a311070d034100153af80</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-29 14:47:20</sys_created_on>
+        <sys_db_object display_value="" name="user_criteria">user_criteria</sys_db_object>
+        <sys_id>84973c6cbea24d92be9f625a16fb5324</sys_id>
+        <sys_metadata>ceb9acbd973a311070d034100153aff6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Gym Member</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_scope_delete display_value="">6ba2a1389bb44300b26741b3861b1000</sys_scope_delete>
+        <sys_update_name>user_criteria_ceb9acbd973a311070d034100153aff6</sys_update_name>
+        <sys_update_version display_value="user_criteria_ceb9acbd973a311070d034100153aff6">b6d960fd973a311070d034100153afa4</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-29 14:47:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

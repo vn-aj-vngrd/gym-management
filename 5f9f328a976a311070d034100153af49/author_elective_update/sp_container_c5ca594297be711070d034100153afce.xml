@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Enroll Workout - Container 1</name>
+        <order>1</order>
+        <semantic_tag/>
+        <sp_page display_value="order_workout">c9ca594297be711070d034100153afcb</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-30 12:53:36</sys_created_on>
+        <sys_id>c5ca594297be711070d034100153afce</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Enroll Workout - Container 1</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>sp_container_c5ca594297be711070d034100153afce</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-30 23:53:05</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gym Management">5f9f328a976a311070d034100153af49</application>
+        <file_path/>
+        <instance_id>ad1a86eddb54e9103050ac44d496196f</instance_id>
+        <instance_name>dev147213</instance_name>
+        <name>sp_container_c5ca594297be711070d034100153afce</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Enroll Workout - Container 1</name><order>1</order><semantic_tag/><sp_page display_value="order_workout">c9ca594297be711070d034100153afcb</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-11-30 12:53:36</sys_created_on><sys_id>c5ca594297be711070d034100153afce</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Enroll Workout - Container 1</sys_name><sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package><sys_policy/><sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope><sys_update_name>sp_container_c5ca594297be711070d034100153afce</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-11-30 23:53:05</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>812201229</payload_hash>
+        <record_name>Enroll Workout - Container 1</record_name>
+        <reverted_from/>
+        <source>9348038697aa311070d034100153af46</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-30 23:53:05</sys_created_on>
+        <sys_id>2db1fb0e973ab11070d034100153afd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c22a67e170000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-30 23:53:05</sys_updated_on>
+        <type>Container</type>
+        <update_guid>e1b1fb0ed03ab110684ac589b15063d6</update_guid>
+        <update_guid_history>e1b1fb0ed03ab110684ac589b15063d6:812201229,d7b3210233fe7110d2b4751390879a6c:-249708404,86c2ed8ee7be71100172ce61ed62a5d0:812201229,4dcadd820fbe7110fb68d1077c127423:745686783</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Enroll Workout - Container 1">0bb13f0e973ab11070d034100153af9a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-30 23:53:12</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>3da6f8de6a1d4f5d95e9b8c5f08da729</sys_id>
+        <sys_metadata>c5ca594297be711070d034100153afce</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Enroll Workout - Container 1</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_scope_delete display_value="">6ba2a1389bb44300b26741b3861b1000</sys_scope_delete>
+        <sys_update_name>sp_container_c5ca594297be711070d034100153afce</sys_update_name>
+        <sys_update_version display_value="sp_container_c5ca594297be711070d034100153afce">2db1fb0e973ab11070d034100153afd6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-30 23:53:12</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
