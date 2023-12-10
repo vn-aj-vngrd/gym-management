@@ -96,15 +96,15 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-12-08 14:20:04</sys_created_on>
         <sys_id>654bfe68974bf51070d034100153afbf</sys_id>
-        <sys_mod_count>31</sys_mod_count>
+        <sys_mod_count>32</sys_mod_count>
         <sys_name>Gym Catalog</sys_name>
         <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
         <sys_policy/>
         <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
         <sys_update_name>sp_widget_654bfe68974bf51070d034100153afbf</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-12-08 15:08:59</sys_updated_on>
-        <template><![CDATA[<h1 class="font-thin m-t-none" id="record_producers_header">Gym Catalog</h1>
+        <sys_updated_on>2023-12-10 10:03:58</sys_updated_on>
+        <template><![CDATA[<h1 class="font-bold m-t-none" id="record_producers_header">Gym Catalog</h1>
 
 <div class="row item-list-style-type-none item-card-row" role="list" aria-labelledby="record_producers_header">
   <div class="col-md-4 item-card-column" ng-repeat="producer in data.recordProducers" role="listitem">
