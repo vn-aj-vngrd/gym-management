@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>3</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">1d8a922097c7f51070d034100153af66</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-10 01:11:33</sys_created_on>
+        <sys_id>bef9d2c597cb791070d034100153af5a</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>sp_instance_bef9d2c597cb791070d034100153af5a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-10 01:29:28</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<h3>&nbsp;</h3>\r\n<h2><strong>Explore Articles</strong></h2>\r\n<p>Every week, we feature some of the most viewed articles you can learn from. In addition, you can them check out and have a discussion with the community.</p>",
+		"displayValue": "<h3>&nbsp;</h3>\n<h2><strong>Explore Articles</strong></h2>\n<p>Every week, we feature some of the most viewed articles you can learn from. In addition, you can them check out and have a discussion with the community.</p>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=bef9d2c597cb791070d034100153af5a"/>
+</record_update>

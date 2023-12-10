@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item">
+    <sp_rectangle_menu_item action="DELETE">
+        <active>true</active>
+        <color>default</color>
+        <condition>gs.getUser().hasRole("gym_trainer")</condition>
+        <display_1/>
+        <display_2/>
+        <display_date/>
+        <filter/>
+        <glyph/>
+        <hint/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <label>Gym Management tables</label>
+        <order>1</order>
+        <record_script/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <sp_page display_value="gym_management_tables">cad095609743f51070d034100153af29</sp_page>
+        <sp_rectangle_menu display_value="Gym Trainer Menu">1a0078f5977a311070d034100153af1e</sp_rectangle_menu>
+        <sp_rectangle_menu_item/>
+        <sys_class_name>sp_rectangle_menu_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-08 06:38:11</sys_created_on>
+        <sys_id>948055a09743f51070d034100153af18</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Gym Management tables</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>sp_rectangle_menu_item_948055a09743f51070d034100153af18</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-08 11:19:11</sys_updated_on>
+        <table/>
+        <type>page</type>
+        <url/>
+        <url_target/>
+    </sp_rectangle_menu_item>
+    <sys_translated_text action="DELETE" query="documentkey=948055a09743f51070d034100153af18"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gym Management">5f9f328a976a311070d034100153af49</application>
+        <file_path/>
+        <instance_id>ad1a86eddb54e9103050ac44d496196f</instance_id>
+        <instance_name>dev147213</instance_name>
+        <name>sp_rectangle_menu_item_948055a09743f51070d034100153af18</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item"><sp_rectangle_menu_item action="INSERT_OR_UPDATE"><active>true</active><color>default</color><condition>gs.getUser().hasRole("gym_trainer")</condition><display_1/><display_2/><display_date/><filter/><glyph/><hint/><kb_article/><kb_category/><kb_topic/><label>Gym Management tables</label><order>1</order><record_script/><sc_cat_item/><sc_category/><short_description/><sp_page display_value="gym_management_tables">cad095609743f51070d034100153af29</sp_page><sp_rectangle_menu display_value="Gym Trainer Menu">1a0078f5977a311070d034100153af1e</sp_rectangle_menu><sp_rectangle_menu_item/><sys_class_name>sp_rectangle_menu_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-12-08 06:38:11</sys_created_on><sys_id>948055a09743f51070d034100153af18</sys_id><sys_mod_count>5</sys_mod_count><sys_name>Gym Management tables</sys_name><sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package><sys_policy/><sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope><sys_update_name>sp_rectangle_menu_item_948055a09743f51070d034100153af18</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-12-08 11:19:11</sys_updated_on><table/><type>page</type><url/><url_target/></sp_rectangle_menu_item><sys_translated_text action="delete_multiple" query="documentkey=948055a09743f51070d034100153af18"/></record_update>]]></payload>
+        <payload_hash>690362525</payload_hash>
+        <record_name>Gym Management tables</record_name>
+        <reverted_from/>
+        <source>9348038697aa311070d034100153af46</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-08 11:19:12</sys_created_on>
+        <sys_id>80e152249787f51070d034100153af3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c492727830000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-08 11:19:12</sys_updated_on>
+        <type>Menu Item</type>
+        <update_guid>48e152249487f5101888fb302a400d3a</update_guid>
+        <update_guid_history>48e152249487f5101888fb302a400d3a:690362525,11811ea02587f510e759b4435b74423a:-1969213131,49868a249147f5106a5ae854cc5de837:1155193807,eb95c6a01847f510f4e44d0b35b02cfa:774277506,70b15de0c743f510bfea5bb5e1a71e0e:-2089747622,009115e0ef43f510110cf2e75ecf3e17:-722488424</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Gym Management tables">acacc685978b791070d034100153af76</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-10 00:13:15</sys_created_on>
+        <sys_db_object display_value="" name="sp_rectangle_menu_item">sp_rectangle_menu_item</sys_db_object>
+        <sys_id>2137f5b41abb4d498568ccd132798b89</sys_id>
+        <sys_metadata>948055a09743f51070d034100153af18</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Gym Management tables</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_scope_delete display_value="">6ba2a1389bb44300b26741b3861b1000</sys_scope_delete>
+        <sys_update_name>sp_rectangle_menu_item_948055a09743f51070d034100153af18</sys_update_name>
+        <sys_update_version display_value="sp_rectangle_menu_item_948055a09743f51070d034100153af18">80e152249787f51070d034100153af3b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-10 00:13:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

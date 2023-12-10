@@ -6,13 +6,13 @@
         <css/>
         <display_field/>
         <field_list>workout_plan.short_description,sys_created_on,state</field_list>
-        <filter table="x_1117801_gym_mngt_transactions">member=javascript:gs.getUserID()^state='Work in Progress'<item endquery="false" field="member" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getUserID()"/>
-            <item display_value="'Work in Progress'" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="'Work in Progress'"/>
+        <filter table="x_1117801_gym_mngt_transactions">member=javascript:gs.getUserID()^state=2<item endquery="false" field="member" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getUserID()"/>
+            <item display_value="Work in Progress" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="2"/>
         </filter>
         <glyph/>
         <id/>
-        <maximum_entries>999</maximum_entries>
-        <order>1</order>
+        <maximum_entries>10</maximum_entries>
+        <order>2</order>
         <order_by>sys_created_on</order_by>
         <order_direction>desc</order_direction>
         <roles/>
@@ -25,14 +25,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-30 12:56:53</sys_created_on>
         <sys_id>058b9dc297be711070d034100153affb</sys_id>
-        <sys_mod_count>23</sys_mod_count>
+        <sys_mod_count>57</sys_mod_count>
         <sys_name>My Current Plan</sys_name>
         <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
         <sys_policy/>
         <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
         <sys_update_name>sp_instance_table_058b9dc297be711070d034100153affb</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-30 13:27:19</sys_updated_on>
+        <sys_updated_on>2023-12-10 01:50:11</sys_updated_on>
         <table>x_1117801_gym_mngt_transactions</table>
         <title>My Current Plan</title>
         <url/>

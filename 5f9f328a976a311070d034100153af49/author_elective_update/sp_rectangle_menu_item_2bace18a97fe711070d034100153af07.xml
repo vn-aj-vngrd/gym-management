@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item">
+    <sp_rectangle_menu_item action="DELETE">
+        <active>true</active>
+        <color>default</color>
+        <condition/>
+        <display_1/>
+        <display_2/>
+        <display_date/>
+        <filter/>
+        <glyph/>
+        <hint/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <label>Create Workout Plan</label>
+        <order>700</order>
+        <record_script/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <sp_page/>
+        <sp_rectangle_menu display_value="Gym Trainer Menu">1a0078f5977a311070d034100153af1e</sp_rectangle_menu>
+        <sp_rectangle_menu_item/>
+        <sys_class_name>sp_rectangle_menu_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-30 14:12:20</sys_created_on>
+        <sys_id>2bace18a97fe711070d034100153af07</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Create Workout Plan</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>sp_rectangle_menu_item_2bace18a97fe711070d034100153af07</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-30 23:43:05</sys_updated_on>
+        <table/>
+        <type>page</type>
+        <url/>
+        <url_target/>
+    </sp_rectangle_menu_item>
+    <sys_translated_text action="DELETE" query="documentkey=2bace18a97fe711070d034100153af07"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gym Management">5f9f328a976a311070d034100153af49</application>
+        <file_path/>
+        <instance_id>ad1a86eddb54e9103050ac44d496196f</instance_id>
+        <instance_name>dev147213</instance_name>
+        <name>sp_rectangle_menu_item_2bace18a97fe711070d034100153af07</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item"><sp_rectangle_menu_item action="INSERT_OR_UPDATE"><active>true</active><color>default</color><condition/><display_1/><display_2/><display_date/><filter/><glyph/><hint/><kb_article/><kb_category/><kb_topic/><label>Create Workout Plan</label><order>700</order><record_script/><sc_cat_item/><sc_category/><short_description/><sp_page/><sp_rectangle_menu display_value="Gym Trainer Menu">1a0078f5977a311070d034100153af1e</sp_rectangle_menu><sp_rectangle_menu_item/><sys_class_name>sp_rectangle_menu_item</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-11-30 14:12:20</sys_created_on><sys_id>2bace18a97fe711070d034100153af07</sys_id><sys_mod_count>3</sys_mod_count><sys_name>Create Workout Plan</sys_name><sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package><sys_policy/><sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope><sys_update_name>sp_rectangle_menu_item_2bace18a97fe711070d034100153af07</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-11-30 23:43:05</sys_updated_on><table/><type>page</type><url/><url_target/></sp_rectangle_menu_item><sys_translated_text action="delete_multiple" query="documentkey=2bace18a97fe711070d034100153af07"/></record_update>]]></payload>
+        <payload_hash>-793475358</payload_hash>
+        <record_name>Create Workout Plan</record_name>
+        <reverted_from/>
+        <source>9348038697aa311070d034100153af46</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-06 08:43:47</sys_created_on>
+        <sys_id>c82b173f9736351070d034100153af99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c3e4c27670000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-06 08:43:47</sys_updated_on>
+        <type>Menu Item</type>
+        <update_guid>842b173f5f363510eb81d785679ac399</update_guid>
+        <update_guid_history>842b173f5f363510eb81d785679ac399:0,7e6f674a213ab110af9630eab5eb4170:-1187247289,2d3fab4aec3ab110bf8ded91eca81980:-1729565111,c7dc650e71fe711034c18da3566d59b3:15402375,9ecc290ee8fe71107c89279d03036e11:-1383105013</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Create Workout Plan">0f73ab779776351070d034100153af90</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-06 09:20:18</sys_created_on>
+        <sys_db_object display_value="" name="sp_rectangle_menu_item">sp_rectangle_menu_item</sys_db_object>
+        <sys_id>22f9794af4b645689bf2a05f71bc2229</sys_id>
+        <sys_metadata>2bace18a97fe711070d034100153af07</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create Workout Plan</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_scope_delete display_value="">6ba2a1389bb44300b26741b3861b1000</sys_scope_delete>
+        <sys_update_name>sp_rectangle_menu_item_2bace18a97fe711070d034100153af07</sys_update_name>
+        <sys_update_version display_value="sp_rectangle_menu_item_2bace18a97fe711070d034100153af07">c82b173f9736351070d034100153af99</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-06 09:20:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_notification_next_experience_content">
+    <sys_notification_next_experience_content action="INSERT_OR_UPDATE">
+        <action_name/>
+        <action_payload/>
+        <active>true</active>
+        <is_default>false</is_default>
+        <message><![CDATA[Hi, ${trainer.name}. A new workout plan ${number}, has just been assigned to you.]]></message>
+        <message_heading><![CDATA[Newly Assigned Workout Plan]]></message_heading>
+        <name>Newly Assigned Workout Plan</name>
+        <notification display_value="Gym - Newly Assigned Workout Plan">da07a7fb9776351070d034100153af52</notification>
+        <route display_value="Next Experience Route">bccd1214533201107cd3ddeeff7b1289</route>
+        <sys_class_name>sys_notification_next_experience_content</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-06 09:41:56</sys_created_on>
+        <sys_id>59f7eb3f9776351070d034100153af2a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Newly Assigned Workout Plan</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>sys_notification_next_experience_content_59f7eb3f9776351070d034100153af2a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-06 09:41:56</sys_updated_on>
+        <use_action>false</use_action>
+    </sys_notification_next_experience_content>
+</record_update>

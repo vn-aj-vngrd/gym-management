@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Cancel Workout Plan">9f385ddc97cf751070d034100153afa3</sc_cat_item>
+        <sc_category display_value="Gym">117b5d149703b51070d034100153afda</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-07 12:43:12</sys_created_on>
+        <sys_id>8d8b99149703b51070d034100153af21</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Gym.Cancel Workout Plan</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>sc_cat_item_category_8d8b99149703b51070d034100153af21</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-07 12:43:12</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gym Management">5f9f328a976a311070d034100153af49</application>
+        <file_path/>
+        <instance_id>ad1a86eddb54e9103050ac44d496196f</instance_id>
+        <instance_name>dev147213</instance_name>
+        <name>sc_cat_item_category_8d8b99149703b51070d034100153af21</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Cancel Workout Plan">9f385ddc97cf751070d034100153afa3</sc_cat_item><sc_category display_value="Gym">117b5d149703b51070d034100153afda</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-12-07 12:43:12</sys_created_on><sys_id>8d8b99149703b51070d034100153af21</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Gym.Cancel Workout Plan</sys_name><sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package><sys_policy/><sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope><sys_update_name>sc_cat_item_category_8d8b99149703b51070d034100153af21</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-12-07 12:43:12</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-1864299146</payload_hash>
+        <record_name>Gym.Cancel Workout Plan</record_name>
+        <reverted_from/>
+        <source>9348038697aa311070d034100153af46</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-07 12:43:13</sys_created_on>
+        <sys_id>cd8bdd149703b51070d034100153af3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c444db7220000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-07 12:43:13</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>058bdd143603b5103d4c57001d39bf3e</update_guid>
+        <update_guid_history>058bdd143603b5103d4c57001d39bf3e:-1864299146</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Gym.Cancel Workout Plan">a9422da49783f51070d034100153af91</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-08 07:51:13</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>9a659fe841894ac8966f4fcf67b84610</sys_id>
+        <sys_metadata>8d8b99149703b51070d034100153af21</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Gym.Cancel Workout Plan</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_scope_delete display_value="">6ba2a1389bb44300b26741b3861b1000</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_8d8b99149703b51070d034100153af21</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_8d8b99149703b51070d034100153af21">cd8bdd149703b51070d034100153af3e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-08 07:51:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

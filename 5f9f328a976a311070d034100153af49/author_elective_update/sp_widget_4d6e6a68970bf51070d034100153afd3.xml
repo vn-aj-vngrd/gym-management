@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>sc</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>@media (min-width: 768px) {
+  .item-card-column {
+     -ms-flex: 0 0 50%;
+    -moz-box-flex: 0 0 50%;
+    -moz-flex: 0 0 50%;
+    -webkit-box-flex: 0 0 50%;;
+    -webkit-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    width: 50%;
+  }
+}
+
+  @media (min-width: 992px) {
+  .item-card-column {
+    -ms-flex: 0 0 33.33333%;
+    -moz-box-flex: 0 0 33.33333%;
+    -moz-flex: 0 0 33.33333%;
+    -webkit-box-flex: 0 0 33.33333%;;
+    -webkit-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    width: 33.33333%;
+  }
+}
+
+.sc-panel {
+  margin-bottom: 0px;
+  border-radius: 0px;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>gym_catalog_items</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Gym Catalog Items</name>
+        <option_schema>[{"hint":"Max number of popular items shown (if empty, defaults to 9)","name":"limit","default_value":"9","section":"Behavior","label":"Limit","type":"integer"},{"hint":"Include requests made through Record Producers","name":"include_record_producers","section":"Behavior","label":"Include Record Producers","type":"boolean"}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[data.showPrices = $sp.showCatalogPrices();
+data.limit = options.limit || 9;
+var items = [];
+
+var allowedItems = $sp.getAllowedItems();
+var count = new GlideAggregate('sc_req_item');
+count.addAggregate('COUNT', 'cat_item');
+count.groupBy('cat_item');
+count.addQuery('cat_item.sys_class_name', 'NOT IN', 'sc_cat_item_guide,sc_cat_item_wizard,sc_cat_item_content');
+count.addQuery('cat_item', 'IN', allowedItems);
+count.addQuery('cat_item.visible_standalone', 'true');
+count.addEncodedQuery('cat_item.hide_sp=false^ORcat_item.hide_spISEMPTY');
+count.orderByAggregate('COUNT', 'cat_item');
+count.query();
+while (count.next() && items.length < data.limit) {
+  if (!$sp.canReadRecord("sc_cat_item", count.cat_item.sys_id.getDisplayValue()))
+    continue; // user does not have permission to see this item
+
+  var item = {};
+  item.count = 0 - count.getAggregate('COUNT', 'cat_item');
+  item.name = count.cat_item.name.getDisplayValue();
+  item.short_description = count.cat_item.short_description.getDisplayValue();
+  item.picture = count.cat_item.picture.getDisplayValue();
+  item.price = count.cat_item.price.getDisplayValue();
+  item.hasPrice = count.cat_item.price != 0;
+  item.sys_id = count.cat_item.sys_id.getDisplayValue();
+  items.push(item);
+}
+
+if (options.include_record_producers == 'true' || options.include_record_producers == true) {
+	var producers = 0;
+	count = new GlideAggregate('sc_item_produced_record');
+	count.addQuery('producer', 'IN', allowedItems);
+	count.addQuery('producer.visible_standalone', 'true');
+	count.addEncodedQuery('producer.hide_sp=false^ORproducer.hide_spISEMPTY');
+	count.addAggregate('COUNT', 'producer');
+	count.groupBy('producer');
+	count.orderByAggregate('COUNT', 'producer');
+	count.query();
+	while (count.next() && producers < data.limit) {
+		
+		var catalogItemJS = new sn_sc.CatItem(count.getValue('producer'));
+		if (!catalogItemJS.canView(gs.isMobile()) || !catalogItemJS.isVisibleServicePortal())
+			continue;
+		var catItemDetails = catalogItemJS.getItemSummary();
+
+		var item = {};
+		item.count = 0 - count.getAggregate('COUNT', 'producer');
+		item.name = catItemDetails.name;
+		item.short_description = catItemDetails.short_description;
+		item.picture = catItemDetails.picture;
+		item.price = catItemDetails.price;
+		item.hasPrice = item.price != 0;
+		item.sys_id = catItemDetails.sys_id;
+		item.page = 'sc_cat_item';
+		items.push(item);
+		producers++;
+	}
+}
+
+data.items = items;]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-08 13:23:46</sys_created_on>
+        <sys_id>4d6e6a68970bf51070d034100153afd3</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Gym Catalog Items</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>sp_widget_4d6e6a68970bf51070d034100153afd3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-08 13:50:52</sys_updated_on>
+        <template><![CDATA[<h1 class="font-thin m-t-none" id="popular_items_header">{{::options.title}}</h1>
+
+<ul class="row item-list-style-type-none item-card-row" role="list" aria-labelledby="popular_items_header">
+  <li class="item-card-column" ng-repeat="item in data.items | orderBy: 'count' | limitTo: data.limit" role="listitem">
+    <div class="panel panel-default item-card b sc-panel">
+      <a href="?id=sc_cat_item&sys_id={{item.sys_id}}" class="panel-body block height-100" onclick='window.GlideWebAnalytics.trackEvent("Service Catalog", "Popular Items", "Item Clicked");'>
+        <div>
+          <h2 class="h4 m-t-none m-b-xs text-overflow-ellipsis" title="{{::item.name}}">{{::item.name}}</h2>
+          <img ng-src="{{::item.picture}}" ng-if="::item.picture" class="m-r-sm m-b-sm item-image pull-left" alt="" aria-hidden="true"/>
+          <div class="text-muted item-short-desc catalog-text-wrap">{{::item.short_description}}</div>
+        </div>
+      </a>
+    </div>
+		<div class="panel-footer b">
+      <a aria-label="${View Details} {{::item.name}}" href="?id=sc_cat_item&sys_id={{item.sys_id}}" class="pull-left text-muted" onclick='window.GlideWebAnalytics.trackEvent("Service Catalog", "Popular Items", "Item Clicked");'>${View Details}</a> <span ng-if="data.showPrices && item.hasPrice" class="pull-right item-price font-bold">{{::item.price}}</span> &nbsp;
+    </div>
+  </li>
+</ul>]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gym Management">5f9f328a976a311070d034100153af49</application>
+        <file_path/>
+        <instance_id>ad1a86eddb54e9103050ac44d496196f</instance_id>
+        <instance_name>dev147213</instance_name>
+        <name>sp_widget_4d6e6a68970bf51070d034100153afd3</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;sc&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;@media (min-width: 768px) {
+  .item-card-column {
+     -ms-flex: 0 0 50%;
+    -moz-box-flex: 0 0 50%;
+    -moz-flex: 0 0 50%;
+    -webkit-box-flex: 0 0 50%;;
+    -webkit-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    width: 50%;
+  }
+}
+
+  @media (min-width: 992px) {
+  .item-card-column {
+    -ms-flex: 0 0 33.33333%;
+    -moz-box-flex: 0 0 33.33333%;
+    -moz-flex: 0 0 33.33333%;
+    -webkit-box-flex: 0 0 33.33333%;;
+    -webkit-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    width: 33.33333%;
+  }
+}
+
+.sc-panel {
+  margin-bottom: 0px;
+  border-radius: 0px;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;gym_catalog_items&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;Gym Catalog Items&lt;/name&gt;&lt;option_schema&gt;[{"hint":"Max number of popular items shown (if empty, defaults to 9)","name":"limit","default_value":"9","section":"Behavior","label":"Limit","type":"integer"},{"hint":"Include requests made through Record Producers","name":"include_record_producers","section":"Behavior","label":"Include Record Producers","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[data.showPrices = $sp.showCatalogPrices();
+data.limit = options.limit || 9;
+var items = [];
+
+var allowedItems = $sp.getAllowedItems();
+var count = new GlideAggregate('sc_req_item');
+count.addAggregate('COUNT', 'cat_item');
+count.groupBy('cat_item');
+count.addQuery('cat_item.sys_class_name', 'NOT IN', 'sc_cat_item_guide,sc_cat_item_wizard,sc_cat_item_content');
+count.addQuery('cat_item', 'IN', allowedItems);
+count.addQuery('cat_item.visible_standalone', 'true');
+count.addEncodedQuery('cat_item.hide_sp=false^ORcat_item.hide_spISEMPTY');
+count.orderByAggregate('COUNT', 'cat_item');
+count.query();
+while (count.next() &amp;&amp; items.length &lt; data.limit) {
+  if (!$sp.canReadRecord("sc_cat_item", count.cat_item.sys_id.getDisplayValue()))
+    continue; // user does not have permission to see this item
+
+  var item = {};
+  item.count = 0 - count.getAggregate('COUNT', 'cat_item');
+  item.name = count.cat_item.name.getDisplayValue();
+  item.short_description = count.cat_item.short_description.getDisplayValue();
+  item.picture = count.cat_item.picture.getDisplayValue();
+  item.price = count.cat_item.price.getDisplayValue();
+  item.hasPrice = count.cat_item.price != 0;
+  item.sys_id = count.cat_item.sys_id.getDisplayValue();
+  items.push(item);
+}
+
+if (options.include_record_producers == 'true' || options.include_record_producers == true) {
+	var producers = 0;
+	count = new GlideAggregate('sc_item_produced_record');
+	count.addQuery('producer', 'IN', allowedItems);
+	count.addQuery('producer.visible_standalone', 'true');
+	count.addEncodedQuery('producer.hide_sp=false^ORproducer.hide_spISEMPTY');
+	count.addAggregate('COUNT', 'producer');
+	count.groupBy('producer');
+	count.orderByAggregate('COUNT', 'producer');
+	count.query();
+	while (count.next() &amp;&amp; producers &lt; data.limit) {
+		
+		var catalogItemJS = new sn_sc.CatItem(count.getValue('producer'));
+		if (!catalogItemJS.canView(gs.isMobile()) || !catalogItemJS.isVisibleServicePortal())
+			continue;
+		var catItemDetails = catalogItemJS.getItemSummary();
+
+		var item = {};
+		item.count = 0 - count.getAggregate('COUNT', 'producer');
+		item.name = catItemDetails.name;
+		item.short_description = catItemDetails.short_description;
+		item.picture = catItemDetails.picture;
+		item.price = catItemDetails.price;
+		item.hasPrice = item.price != 0;
+		item.sys_id = catItemDetails.sys_id;
+		item.page = 'sc_cat_item';
+		items.push(item);
+		producers++;
+	}
+}
+
+data.items = items;]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-12-08 13:23:46&lt;/sys_created_on&gt;&lt;sys_id&gt;4d6e6a68970bf51070d034100153afd3&lt;/sys_id&gt;&lt;sys_mod_count&gt;10&lt;/sys_mod_count&gt;&lt;sys_name&gt;Gym Catalog Items&lt;/sys_name&gt;&lt;sys_package display_value="Gym Management" source="x_1117801_gym_mngt"&gt;5f9f328a976a311070d034100153af49&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Gym Management"&gt;5f9f328a976a311070d034100153af49&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_4d6e6a68970bf51070d034100153afd3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-12-08 13:50:52&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;h1 class="font-thin m-t-none" id="popular_items_header"&gt;{{::options.title}}&lt;/h1&gt;
+
+&lt;ul class="row item-list-style-type-none item-card-row" role="list" aria-labelledby="popular_items_header"&gt;
+  &lt;li class="item-card-column" ng-repeat="item in data.items | orderBy: 'count' | limitTo: data.limit" role="listitem"&gt;
+    &lt;div class="panel panel-default item-card b sc-panel"&gt;
+      &lt;a href="?id=sc_cat_item&amp;sys_id={{item.sys_id}}" class="panel-body block height-100" onclick='window.GlideWebAnalytics.trackEvent("Service Catalog", "Popular Items", "Item Clicked");'&gt;
+        &lt;div&gt;
+          &lt;h2 class="h4 m-t-none m-b-xs text-overflow-ellipsis" title="{{::item.name}}"&gt;{{::item.name}}&lt;/h2&gt;
+          &lt;img ng-src="{{::item.picture}}" ng-if="::item.picture" class="m-r-sm m-b-sm item-image pull-left" alt="" aria-hidden="true"/&gt;
+          &lt;div class="text-muted item-short-desc catalog-text-wrap"&gt;{{::item.short_description}}&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+		&lt;div class="panel-footer b"&gt;
+      &lt;a aria-label="${View Details} {{::item.name}}" href="?id=sc_cat_item&amp;sys_id={{item.sys_id}}" class="pull-left text-muted" onclick='window.GlideWebAnalytics.trackEvent("Service Catalog", "Popular Items", "Item Clicked");'&gt;${View Details}&lt;/a&gt; &lt;span ng-if="data.showPrices &amp;&amp; item.hasPrice" class="pull-right item-price font-bold"&gt;{{::item.price}}&lt;/span&gt; &amp;nbsp;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-420670771</payload_hash>
+        <record_name>Gym Catalog Items</record_name>
+        <reverted_from/>
+        <source>9348038697aa311070d034100153af46</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-08 13:50:52</sys_created_on>
+        <sys_id>4a947e60974bf51070d034100153afea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c49b204af0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-08 13:50:52</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>02947e60bc4bf5101a916801055b66ea</update_guid>
+        <update_guid_history>02947e60bc4bf5101a916801055b66ea:-420670771,4764b260ed4bf51004dfee27c6acdc0a:-515600311,d9f3be20014bf5106df9096acb316f99:-420670771,ee72feac1e0bf510736ee784776a5e3a:-469603800,e832be6cbc0bf5106a70980d1451da43:-459012713,c6e1fa6cc20bf51079a9283c84fa06bc:2125596347,2bc0f62ce50bf51050cca16f98376d7f:-1856309425,f570722cdf0bf510c19a2d754f112d6b:-1923698777,48dfaaa8bb0bf510a165dba5fa13518f:-1856309425,810f6e68eb0bf5108dcc9e38de4248c3:898513008,0d6e6a680c0bf51076435ef4b95ac4d5:-444578181</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Gym Catalog Items">d96b36a8974bf51070d034100153afa1</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-08 14:20:36</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>3566d7c020b94d468248f13d76e5cc24</sys_id>
+        <sys_metadata>4d6e6a68970bf51070d034100153afd3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Gym Catalog Items</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_scope_delete display_value="">6ba2a1389bb44300b26741b3861b1000</sys_scope_delete>
+        <sys_update_name>sp_widget_4d6e6a68970bf51070d034100153afd3</sys_update_name>
+        <sys_update_version display_value="sp_widget_4d6e6a68970bf51070d034100153afd3">4a947e60974bf51070d034100153afea</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-08 14:20:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

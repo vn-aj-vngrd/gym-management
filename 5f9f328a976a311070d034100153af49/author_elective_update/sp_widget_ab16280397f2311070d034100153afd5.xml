@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>/* styles.css */&#13;
+&#13;
+/* Styles for the form container */&#13;
+.create-workout-plan-form {&#13;
+    max-width: 500px;&#13;
+    margin: 0 auto;&#13;
+}&#13;
+&#13;
+/* Styles for form fields */&#13;
+.form-field {&#13;
+    margin-bottom: 20px;&#13;
+}&#13;
+&#13;
+/* Additional styles for form elements */&#13;
+.form-label {&#13;
+    font-weight: bold;&#13;
+}&#13;
+&#13;
+/* Customize as needed */&#13;
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Create Workout Plan Form</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-03 11:38:46</sys_created_on>
+        <sys_id>ab16280397f2311070d034100153afd5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Create Workout Plan Form</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>sp_widget_ab16280397f2311070d034100153afd5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-03 12:16:39</sys_updated_on>
+        <template><![CDATA[<widget id="createWorkoutPlanForm" name="form" options="{'table':'workout_plans'}">
+    <instance_option key="view" value="create"/>
+    <instance_option key="default_values" value="{'assigned_to':'${session.user.id}'}"/>
+    <instance_option key="redirect" value="self"/>
+    <instance_option key="submit" value="true"/>
+    <instance_option key="function" value="onSubmit"/>
+    <custom_trigger />
+    <fields>
+        <field id="short_description" label="Workout Plan Name" mandatory="true"/>
+        <field id="description" label="Description" mandatory="false" type="text"/>
+        <!-- Add more fields as needed -->
+    </fields>
+  	<css>
+        <style href="/CSS/styles.css"/>
+    </css>
+</widget>]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gym Management">5f9f328a976a311070d034100153af49</application>
+        <file_path/>
+        <instance_id>ad1a86eddb54e9103050ac44d496196f</instance_id>
+        <instance_name>dev147213</instance_name>
+        <name>sp_widget_ab16280397f2311070d034100153afd5</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;/* styles.css */&amp;#13;
+&amp;#13;
+/* Styles for the form container */&amp;#13;
+.create-workout-plan-form {&amp;#13;
+    max-width: 500px;&amp;#13;
+    margin: 0 auto;&amp;#13;
+}&amp;#13;
+&amp;#13;
+/* Styles for form fields */&amp;#13;
+.form-field {&amp;#13;
+    margin-bottom: 20px;&amp;#13;
+}&amp;#13;
+&amp;#13;
+/* Additional styles for form elements */&amp;#13;
+.form-label {&amp;#13;
+    font-weight: bold;&amp;#13;
+}&amp;#13;
+&amp;#13;
+/* Customize as needed */&amp;#13;
+&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;Create Workout Plan Form&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-12-03 11:38:46&lt;/sys_created_on&gt;&lt;sys_id&gt;ab16280397f2311070d034100153afd5&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Create Workout Plan Form&lt;/sys_name&gt;&lt;sys_package display_value="Gym Management" source="x_1117801_gym_mngt"&gt;5f9f328a976a311070d034100153af49&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Gym Management"&gt;5f9f328a976a311070d034100153af49&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_ab16280397f2311070d034100153afd5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-12-03 12:16:39&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;widget id="createWorkoutPlanForm" name="form" options="{'table':'workout_plans'}"&gt;
+    &lt;instance_option key="view" value="create"/&gt;
+    &lt;instance_option key="default_values" value="{'assigned_to':'${session.user.id}'}"/&gt;
+    &lt;instance_option key="redirect" value="self"/&gt;
+    &lt;instance_option key="submit" value="true"/&gt;
+    &lt;instance_option key="function" value="onSubmit"/&gt;
+    &lt;custom_trigger /&gt;
+    &lt;fields&gt;
+        &lt;field id="short_description" label="Workout Plan Name" mandatory="true"/&gt;
+        &lt;field id="description" label="Description" mandatory="false" type="text"/&gt;
+        &lt;!-- Add more fields as needed --&gt;
+    &lt;/fields&gt;
+  	&lt;css&gt;
+        &lt;style href="/CSS/styles.css"/&gt;
+    &lt;/css&gt;
+&lt;/widget&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>2045687956</payload_hash>
+        <record_name>Create Workout Plan Form</record_name>
+        <reverted_from/>
+        <source>9348038697aa311070d034100153af46</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-03 12:16:39</sys_created_on>
+        <sys_id>491fa0cb97f2311070d034100153af8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c2f9bf7490000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-03 12:16:39</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>011fa0cbf3f2311055bb506fa96ea28f</update_guid>
+        <update_guid_history>011fa0cbf3f2311055bb506fa96ea28f:2045687956,0beea0cb0ff23110348157aa7778ef48:431860577,52666c039bf2311049688347e4d884f8:2031792529</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Create Workout Plan Form">0e99fee4974bf51070d034100153af78</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-08 14:12:43</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>20c06b7df4cd48f0a492c6a6c1b59304</sys_id>
+        <sys_metadata>ab16280397f2311070d034100153afd5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create Workout Plan Form</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_scope_delete display_value="">6ba2a1389bb44300b26741b3861b1000</sys_scope_delete>
+        <sys_update_name>sp_widget_ab16280397f2311070d034100153afd5</sys_update_name>
+        <sys_update_version display_value="sp_widget_ab16280397f2311070d034100153afd5">491fa0cb97f2311070d034100153af8f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-08 14:12:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

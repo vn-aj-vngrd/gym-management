@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Workout Plan Producer">3c8f84c8970b351070d034100153afe0</sc_cat_item>
+        <sc_catalog display_value="Gym Catalog">094fc8b997b6311070d034100153af10</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-06 12:33:25</sys_created_on>
+        <sys_id>fbaf48c8970b351070d034100153afb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Gym Catalog.Workout Plan Producer</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_fbaf48c8970b351070d034100153afb5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-06 12:33:25</sys_updated_on>
+    </sc_cat_item_catalog>
+</record_update>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="DELETE">
+        <child display_value="Copy of SC Popular Items">5585a2ac97c7f51070d034100153afc0</child>
+        <cloned>2023-12-08 12:45:01</cloned>
+        <last_validated>2023-12-08 12:45:01</last_validated>
+        <parent display_value="SC Popular Items">cbcacf13cb21020000f8d856634c9ca0</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;sc&lt;/category&gt;&lt;client_script/&gt;&lt;controller_as/&gt;&lt;css&gt;@media (min-width: 768px) {
+  .item-card-column {
+     -ms-flex: 0 0 50%;
+    -moz-box-flex: 0 0 50%;
+    -moz-flex: 0 0 50%;
+    -webkit-box-flex: 0 0 50%;;
+    -webkit-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    width: 50%;
+  }
+}
+
+  @media (min-width: 992px) {
+  .item-card-column {
+    -ms-flex: 0 0 33.33333%;
+    -moz-box-flex: 0 0 33.33333%;
+    -moz-flex: 0 0 33.33333%;
+    -webkit-box-flex: 0 0 33.33333%;;
+    -webkit-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    width: 33.33333%;
+  }
+}
+
+.sc-panel {
+  margin-bottom: 0px;
+  border-radius: 0px;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;sc_catalog&lt;/field_list&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;SC Popular Items&lt;/name&gt;&lt;option_schema&gt;[{"hint":"Max number of popular items shown (if empty, defaults to 9)","name":"limit","default_value":"9","section":"Behavior","label":"Limit","type":"integer"},{"hint":"Include requests made through Record Producers","name":"include_record_producers","section":"Behavior","label":"Include Record Producers","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles&gt;snc_external,snc_internal&lt;/roles&gt;&lt;script&gt;&lt;![CDATA[data.showPrices = $sp.showCatalogPrices();
+data.limit = options.limit || 9;
+var items = [];
+
+var allowedItems = $sp.getAllowedItems();
+var count = new GlideAggregate('sc_req_item');
+count.addAggregate('COUNT', 'cat_item');
+count.groupBy('cat_item');
+count.addQuery('cat_item.sys_class_name', 'NOT IN', 'sc_cat_item_guide,sc_cat_item_wizard,sc_cat_item_content');
+count.addQuery('cat_item', 'IN', allowedItems);
+count.addQuery('cat_item.visible_standalone', 'true');
+count.addEncodedQuery('cat_item.hide_sp=false^ORcat_item.hide_spISEMPTY');
+count.orderByAggregate('COUNT', 'cat_item');
+count.query();
+while (count.next() &amp;&amp; items.length &lt; data.limit) {
+  if (!$sp.canReadRecord("sc_cat_item", count.cat_item.sys_id.getDisplayValue()))
+    continue; // user does not have permission to see this item
+
+  var item = {};
+  item.count = 0 - count.getAggregate('COUNT', 'cat_item');
+  item.name = count.cat_item.name.getDisplayValue();
+  item.short_description = count.cat_item.short_description.getDisplayValue();
+  item.picture = count.cat_item.picture.getDisplayValue();
+  item.price = count.cat_item.price.getDisplayValue();
+  item.hasPrice = count.cat_item.price != 0;
+  item.sys_id = count.cat_item.sys_id.getDisplayValue();
+  items.push(item);
+}
+
+if (options.include_record_producers == 'true' || options.include_record_producers == true) {
+	var producers = 0;
+	count = new GlideAggregate('sc_item_produced_record');
+	count.addQuery('producer', 'IN', allowedItems);
+	count.addQuery('producer.visible_standalone', 'true');
+	count.addEncodedQuery('producer.hide_sp=false^ORproducer.hide_spISEMPTY');
+	count.addAggregate('COUNT', 'producer');
+	count.groupBy('producer');
+	count.orderByAggregate('COUNT', 'producer');
+	count.query();
+	while (count.next() &amp;&amp; producers &lt; data.limit) {
+		
+		var catalogItemJS = new sn_sc.CatItem(count.getValue('producer'));
+		if (!catalogItemJS.canView(gs.isMobile()) || !catalogItemJS.isVisibleServicePortal())
+			continue;
+		var catItemDetails = catalogItemJS.getItemSummary();
+
+		var item = {};
+		item.count = 0 - count.getAggregate('COUNT', 'producer');
+		item.name = catItemDetails.name;
+		item.short_description = catItemDetails.short_description;
+		item.picture = catItemDetails.picture;
+		item.price = catItemDetails.price;
+		item.hasPrice = item.price != 0;
+		item.sys_id = catItemDetails.sys_id;
+		item.page = 'sc_cat_item';
+		items.push(item);
+		producers++;
+	}
+}
+
+data.items = items;]]&gt;&lt;/script&gt;&lt;servicenow&gt;true&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2015-08-04 00:10:03&lt;/sys_created_on&gt;&lt;sys_id&gt;cbcacf13cb21020000f8d856634c9ca0&lt;/sys_id&gt;&lt;sys_mod_count&gt;147&lt;/sys_mod_count&gt;&lt;sys_name&gt;SC Popular Items&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal - Service Catalog (do not activate...see plugin description)" source="com.glide.service-portal.service-catalog"&gt;8ddfcc64d9f13110cedf7dffddb48f55&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_cbcacf13cb21020000f8d856634c9ca0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-04-20 11:37:47&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;h1 class="font-thin m-t-none" id="popular_items_header"&gt;{{::options.title}}&lt;/h1&gt;
+
+&lt;ul class="row item-list-style-type-none item-card-row" role="list" aria-labelledby="popular_items_header"&gt;
+  &lt;li class="item-card-column" ng-repeat="item in data.items | orderBy: 'count' | limitTo: data.limit" role="listitem"&gt;
+    &lt;div class="panel panel-default item-card b sc-panel"&gt;
+      &lt;a href="?id=sc_cat_item&amp;sys_id={{item.sys_id}}" class="panel-body block height-100" onclick='window.GlideWebAnalytics.trackEvent("Service Catalog", "Popular Items", "Item Clicked");'&gt;
+        &lt;div&gt;
+          &lt;h2 class="h4 m-t-none m-b-xs text-overflow-ellipsis" title="{{::item.name}}"&gt;{{::item.name}}&lt;/h2&gt;
+          &lt;img ng-src="{{::item.picture}}" ng-if="::item.picture" class="m-r-sm m-b-sm item-image pull-left" alt="" aria-hidden="true"/&gt;
+          &lt;div class="text-muted item-short-desc catalog-text-wrap"&gt;{{::item.short_description}}&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+		&lt;div class="panel-footer b"&gt;
+      &lt;a aria-label="${View Details} {{::item.name}}" href="?id=sc_cat_item&amp;sys_id={{item.sys_id}}" class="pull-left text-muted" onclick='window.GlideWebAnalytics.trackEvent("Service Catalog", "Popular Items", "Item Clicked");'&gt;${View Details}&lt;/a&gt; &lt;span ng-if="data.showPrices &amp;&amp; item.hasPrice" class="pull-right item-price font-bold"&gt;{{::item.price}}&lt;/span&gt; &amp;nbsp;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-08 12:45:01</sys_created_on>
+        <sys_id>dd85a2ac97c7f51070d034100153afc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>5585a2ac97c7f51070d034100153afc0</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_dd85a2ac97c7f51070d034100153afc3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-08 12:45:01</sys_updated_on>
+    </sp_rel_widget_clone>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gym Management">5f9f328a976a311070d034100153af49</application>
+        <file_path/>
+        <instance_id>ad1a86eddb54e9103050ac44d496196f</instance_id>
+        <instance_name>dev147213</instance_name>
+        <name>sp_rel_widget_clone_dd85a2ac97c7f51070d034100153afc3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone"><sp_rel_widget_clone action="INSERT_OR_UPDATE"><child display_value="Copy of SC Popular Items">5585a2ac97c7f51070d034100153afc0</child><cloned>2023-12-08 12:45:01</cloned><last_validated>2023-12-08 12:45:01</last_validated><parent display_value="SC Popular Items">cbcacf13cb21020000f8d856634c9ca0</parent><payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;sc&lt;/category&gt;&lt;client_script/&gt;&lt;controller_as/&gt;&lt;css&gt;@media (min-width: 768px) {
+  .item-card-column {
+     -ms-flex: 0 0 50%;
+    -moz-box-flex: 0 0 50%;
+    -moz-flex: 0 0 50%;
+    -webkit-box-flex: 0 0 50%;;
+    -webkit-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    width: 50%;
+  }
+}
+
+  @media (min-width: 992px) {
+  .item-card-column {
+    -ms-flex: 0 0 33.33333%;
+    -moz-box-flex: 0 0 33.33333%;
+    -moz-flex: 0 0 33.33333%;
+    -webkit-box-flex: 0 0 33.33333%;;
+    -webkit-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    width: 33.33333%;
+  }
+}
+
+.sc-panel {
+  margin-bottom: 0px;
+  border-radius: 0px;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;sc_catalog&lt;/field_list&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;SC Popular Items&lt;/name&gt;&lt;option_schema&gt;[{"hint":"Max number of popular items shown (if empty, defaults to 9)","name":"limit","default_value":"9","section":"Behavior","label":"Limit","type":"integer"},{"hint":"Include requests made through Record Producers","name":"include_record_producers","section":"Behavior","label":"Include Record Producers","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles&gt;snc_external,snc_internal&lt;/roles&gt;&lt;script&gt;&lt;![CDATA[data.showPrices = $sp.showCatalogPrices();
+data.limit = options.limit || 9;
+var items = [];
+
+var allowedItems = $sp.getAllowedItems();
+var count = new GlideAggregate('sc_req_item');
+count.addAggregate('COUNT', 'cat_item');
+count.groupBy('cat_item');
+count.addQuery('cat_item.sys_class_name', 'NOT IN', 'sc_cat_item_guide,sc_cat_item_wizard,sc_cat_item_content');
+count.addQuery('cat_item', 'IN', allowedItems);
+count.addQuery('cat_item.visible_standalone', 'true');
+count.addEncodedQuery('cat_item.hide_sp=false^ORcat_item.hide_spISEMPTY');
+count.orderByAggregate('COUNT', 'cat_item');
+count.query();
+while (count.next() &amp;&amp; items.length &lt; data.limit) {
+  if (!$sp.canReadRecord("sc_cat_item", count.cat_item.sys_id.getDisplayValue()))
+    continue; // user does not have permission to see this item
+
+  var item = {};
+  item.count = 0 - count.getAggregate('COUNT', 'cat_item');
+  item.name = count.cat_item.name.getDisplayValue();
+  item.short_description = count.cat_item.short_description.getDisplayValue();
+  item.picture = count.cat_item.picture.getDisplayValue();
+  item.price = count.cat_item.price.getDisplayValue();
+  item.hasPrice = count.cat_item.price != 0;
+  item.sys_id = count.cat_item.sys_id.getDisplayValue();
+  items.push(item);
+}
+
+if (options.include_record_producers == 'true' || options.include_record_producers == true) {
+	var producers = 0;
+	count = new GlideAggregate('sc_item_produced_record');
+	count.addQuery('producer', 'IN', allowedItems);
+	count.addQuery('producer.visible_standalone', 'true');
+	count.addEncodedQuery('producer.hide_sp=false^ORproducer.hide_spISEMPTY');
+	count.addAggregate('COUNT', 'producer');
+	count.groupBy('producer');
+	count.orderByAggregate('COUNT', 'producer');
+	count.query();
+	while (count.next() &amp;&amp; producers &lt; data.limit) {
+		
+		var catalogItemJS = new sn_sc.CatItem(count.getValue('producer'));
+		if (!catalogItemJS.canView(gs.isMobile()) || !catalogItemJS.isVisibleServicePortal())
+			continue;
+		var catItemDetails = catalogItemJS.getItemSummary();
+
+		var item = {};
+		item.count = 0 - count.getAggregate('COUNT', 'producer');
+		item.name = catItemDetails.name;
+		item.short_description = catItemDetails.short_description;
+		item.picture = catItemDetails.picture;
+		item.price = catItemDetails.price;
+		item.hasPrice = item.price != 0;
+		item.sys_id = catItemDetails.sys_id;
+		item.page = 'sc_cat_item';
+		items.push(item);
+		producers++;
+	}
+}
+
+data.items = items;]]&gt;&lt;/script&gt;&lt;servicenow&gt;true&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2015-08-04 00:10:03&lt;/sys_created_on&gt;&lt;sys_id&gt;cbcacf13cb21020000f8d856634c9ca0&lt;/sys_id&gt;&lt;sys_mod_count&gt;147&lt;/sys_mod_count&gt;&lt;sys_name&gt;SC Popular Items&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal - Service Catalog (do not activate...see plugin description)" source="com.glide.service-portal.service-catalog"&gt;8ddfcc64d9f13110cedf7dffddb48f55&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_cbcacf13cb21020000f8d856634c9ca0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-04-20 11:37:47&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;h1 class="font-thin m-t-none" id="popular_items_header"&gt;{{::options.title}}&lt;/h1&gt;
+
+&lt;ul class="row item-list-style-type-none item-card-row" role="list" aria-labelledby="popular_items_header"&gt;
+  &lt;li class="item-card-column" ng-repeat="item in data.items | orderBy: 'count' | limitTo: data.limit" role="listitem"&gt;
+    &lt;div class="panel panel-default item-card b sc-panel"&gt;
+      &lt;a href="?id=sc_cat_item&amp;sys_id={{item.sys_id}}" class="panel-body block height-100" onclick='window.GlideWebAnalytics.trackEvent("Service Catalog", "Popular Items", "Item Clicked");'&gt;
+        &lt;div&gt;
+          &lt;h2 class="h4 m-t-none m-b-xs text-overflow-ellipsis" title="{{::item.name}}"&gt;{{::item.name}}&lt;/h2&gt;
+          &lt;img ng-src="{{::item.picture}}" ng-if="::item.picture" class="m-r-sm m-b-sm item-image pull-left" alt="" aria-hidden="true"/&gt;
+          &lt;div class="text-muted item-short-desc catalog-text-wrap"&gt;{{::item.short_description}}&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+		&lt;div class="panel-footer b"&gt;
+      &lt;a aria-label="${View Details} {{::item.name}}" href="?id=sc_cat_item&amp;sys_id={{item.sys_id}}" class="pull-left text-muted" onclick='window.GlideWebAnalytics.trackEvent("Service Catalog", "Popular Items", "Item Clicked");'&gt;${View Details}&lt;/a&gt; &lt;span ng-if="data.showPrices &amp;&amp; item.hasPrice" class="pull-right item-price font-bold"&gt;{{::item.price}}&lt;/span&gt; &amp;nbsp;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload><sys_class_name>sp_rel_widget_clone</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-12-08 12:45:01</sys_created_on><sys_id>dd85a2ac97c7f51070d034100153afc3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>5585a2ac97c7f51070d034100153afc0</sys_name><sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package><sys_policy/><sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope><sys_update_name>sp_rel_widget_clone_dd85a2ac97c7f51070d034100153afc3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-12-08 12:45:01</sys_updated_on></sp_rel_widget_clone></record_update>]]></payload>
+        <payload_hash>-447316746</payload_hash>
+        <record_name>5585a2ac97c7f51070d034100153afc0</record_name>
+        <reverted_from/>
+        <source>9348038697aa311070d034100153af46</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-08 12:45:01</sys_created_on>
+        <sys_id>e185a2ac97c7f51070d034100153afc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c4975bc1b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-08 12:45:01</sys_updated_on>
+        <type>Widget Clone</type>
+        <update_guid>2985a2ac37c7f510a2789b0aa0e19cc5</update_guid>
+        <update_guid_history>2985a2ac37c7f510a2789b0aa0e19cc5:-447316746</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">f8fd6268970bf51070d034100153afc4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-08 13:21:51</sys_created_on>
+        <sys_db_object display_value="" name="sp_rel_widget_clone">sp_rel_widget_clone</sys_db_object>
+        <sys_id>42ea9a0674e144ee9b91e838a5b05c49</sys_id>
+        <sys_metadata>dd85a2ac97c7f51070d034100153afc3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>5585a2ac97c7f51070d034100153afc0</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_scope_delete display_value="">6ba2a1389bb44300b26741b3861b1000</sys_scope_delete>
+        <sys_update_name>sp_rel_widget_clone_dd85a2ac97c7f51070d034100153afc3</sys_update_name>
+        <sys_update_version display_value="sp_rel_widget_clone_dd85a2ac97c7f51070d034100153afc3">e185a2ac97c7f51070d034100153afc6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-08 13:21:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

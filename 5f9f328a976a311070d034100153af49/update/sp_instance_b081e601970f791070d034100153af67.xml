@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">3e02110a977e711070d034100153afaf</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-10 01:44:28</sys_created_on>
+        <sys_id>b081e601970f791070d034100153af67</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>sp_instance_b081e601970f791070d034100153af67</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-10 01:46:00</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div data-testid=\"conversation-turn-11\">\r\n<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div data-message-id=\"9e56b98c-95eb-4e44-a7ff-21c9eefba514\" data-message-author-role=\"assistant\">\r\n<div>\r\n<h2><strong>My Enrolled Members</strong></h2>\r\n<p>Efficiently oversee your enrolled members, workout plans and assigned trainers for a streamlined and personalized fitness experience.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>",
+		"displayValue": "<div>\n<div>\n<div>\n<div>\n<div data-testid=\"conversation-turn-11\">\n<div>\n<div>\n<div>\n<div>\n<div>\n<div data-message-id=\"9e56b98c-95eb-4e44-a7ff-21c9eefba514\" data-message-author-role=\"assistant\">\n<div>\n<h2><strong>My Enrolled Members</strong></h2>\n<p>Efficiently oversee your enrolled members, workout plans and assigned trainers for a streamlined and personalized fitness experience.</p>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=b081e601970f791070d034100153af67"/>
+</record_update>

@@ -2,7 +2,7 @@
     <sp_rectangle_menu_item action="INSERT_OR_UPDATE">
         <active>true</active>
         <color>default</color>
-        <condition/>
+        <condition>gs.getUser().hasRole("gym_trainer") || gs.getUser().hasRole("gym_manager") || gs.getUser().hasRole("gym_member");</condition>
         <display_1/>
         <display_2/>
         <display_date/>
@@ -12,27 +12,27 @@
         <kb_article/>
         <kb_category/>
         <kb_topic/>
-        <label>Enroll Workout Plan</label>
+        <label>Gym Catalog</label>
         <order>500</order>
         <record_script/>
         <sc_cat_item/>
         <sc_category/>
         <short_description/>
-        <sp_page display_value="enroll_workout_plan">362830b197ba311070d034100153af2c</sp_page>
+        <sp_page display_value="gym_catalog">362830b197ba311070d034100153af2c</sp_page>
         <sp_rectangle_menu display_value="Gym Trainer Menu">1a0078f5977a311070d034100153af1e</sp_rectangle_menu>
         <sp_rectangle_menu_item/>
         <sys_class_name>sp_rectangle_menu_item</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-30 13:03:21</sys_created_on>
         <sys_id>91ecd54697be711070d034100153affd</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Enroll Workout Plan</sys_name>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Gym Catalog</sys_name>
         <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
         <sys_policy/>
         <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
         <sys_update_name>sp_rectangle_menu_item_91ecd54697be711070d034100153affd</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-30 23:54:06</sys_updated_on>
+        <sys_updated_on>2023-12-08 15:13:42</sys_updated_on>
         <table/>
         <type>page</type>
         <url/>

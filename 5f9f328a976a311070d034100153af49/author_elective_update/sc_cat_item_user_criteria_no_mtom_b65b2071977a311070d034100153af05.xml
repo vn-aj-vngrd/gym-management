@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom">
+    <sc_cat_item_user_criteria_no_mtom action="DELETE">
+        <sc_cat_item display_value="Enroll Workout Plan">ccb7547597f6311070d034100153afbb</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-29 14:49:00</sys_created_on>
+        <sys_id>b65b2071977a311070d034100153af05</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Enroll Workout Plan.Gym Manager</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_b65b2071977a311070d034100153af05</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-29 14:49:00</sys_updated_on>
+        <user_criteria display_value="Gym Manager">887ba071977a311070d034100153af28</user_criteria>
+    </sc_cat_item_user_criteria_no_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gym Management">5f9f328a976a311070d034100153af49</application>
+        <file_path/>
+        <instance_id>ad1a86eddb54e9103050ac44d496196f</instance_id>
+        <instance_name>dev147213</instance_name>
+        <name>sc_cat_item_user_criteria_no_mtom_b65b2071977a311070d034100153af05</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom"><sc_cat_item_user_criteria_no_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="Enroll Workout Plan">ccb7547597f6311070d034100153afbb</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-11-29 14:49:00</sys_created_on><sys_id>b65b2071977a311070d034100153af05</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Enroll Workout Plan.Gym Manager</sys_name><sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package><sys_policy/><sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope><sys_update_name>sc_cat_item_user_criteria_no_mtom_b65b2071977a311070d034100153af05</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-11-29 14:49:00</sys_updated_on><user_criteria display_value="Gym Manager">887ba071977a311070d034100153af28</user_criteria></sc_cat_item_user_criteria_no_mtom></record_update>]]></payload>
+        <payload_hash>1645384349</payload_hash>
+        <record_name>Enroll Workout Plan.Gym Manager</record_name>
+        <reverted_from/>
+        <source>9348038697aa311070d034100153af46</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-11-29 14:49:00</sys_created_on>
+        <sys_id>b99ba471977a311070d034100153af09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c1b8e02760000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-11-29 14:49:00</sys_updated_on>
+        <type>Catalog Item Not Available for</type>
+        <update_guid>fd9ba471e07a3110fa9bb3e2a1a99208</update_guid>
+        <update_guid_history>fd9ba471e07a3110fa9bb3e2a1a99208:1645384349</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Enroll Workout Plan.Gym Manager">3745bc14974f751070d034100153afa1</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-07 09:56:16</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_no_mtom">sc_cat_item_user_criteria_no_mtom</sys_db_object>
+        <sys_id>0661538f784541f08077b5aa8a694900</sys_id>
+        <sys_metadata>b65b2071977a311070d034100153af05</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Enroll Workout Plan.Gym Manager</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_scope_delete display_value="">6ba2a1389bb44300b26741b3861b1000</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_b65b2071977a311070d034100153af05</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_no_mtom_b65b2071977a311070d034100153af05">b99ba471977a311070d034100153af09</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-07 09:56:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

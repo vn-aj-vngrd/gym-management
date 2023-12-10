@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1117801_gym_mngt.Validate Transaction</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>Validate Transaction</name>
+        <script><![CDATA[var validateTransaction = Class.create();
+
+validateTransaction.prototype = {
+    initialize: function() {},
+
+    // Method to check if the current user has records in Transactions table
+    checkTransactionsForCurrentUser: function() {
+        var hasTransaction = false;
+        var userId = gs.getUserID(); // Get the current user's ID
+
+        // Query the 'Transactions' table for the current user
+        var transactionGr = new GlideRecord('x_1117801_gym_mngt_transactions');
+        transactionGr.addQuery('member', userId); // Assuming 'user' is the field referencing users
+        transactionGr.query();
+
+        // If records are found for the user, set hasTransaction to true
+        if (transactionGr.hasNext()) {
+            hasTransaction = true;
+        }
+
+        return hasTransaction;
+    },
+
+    // Other methods can be added here as needed
+
+    type: 'validateTransaction'
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-03 13:08:36</sys_created_on>
+        <sys_id>6cf9bc0b9736311070d034100153afd4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Validate Transaction</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>sys_script_include_6cf9bc0b9736311070d034100153afd4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-03 13:17:00</sys_updated_on>
+    </sys_script_include>
+</record_update>

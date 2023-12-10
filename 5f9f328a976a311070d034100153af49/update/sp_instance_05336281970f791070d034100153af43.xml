@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">106bd9c297be711070d034100153af6f</sp_column>
+        <sp_widget display_value="HTML">8679ef89cb21120000f8d856634c9c4f</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-10 01:51:51</sys_created_on>
+        <sys_id>05336281970f791070d034100153af43</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>sp_instance_05336281970f791070d034100153af43</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-10 01:53:01</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"html": {
+		"value": "<h2><strong>My Approvals</strong></h2>\r\n<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div data-testid=\"conversation-turn-13\">\r\n<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div>\r\n<div data-message-id=\"3692b42c-c104-4ce6-8d9d-edf56678b24f\" data-message-author-role=\"assistant\">\r\n<div>\r\n<p>Manage transactions requiring your approval through ensuring smooth and secure financial oversight.</p>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>",
+		"displayValue": "<h2><strong>My Approvals</strong></h2>\n<div>\n<div>\n<div>\n<div>\n<div data-testid=\"conversation-turn-13\">\n<div>\n<div>\n<div>\n<div>\n<div>\n<div data-message-id=\"3692b42c-c104-4ce6-8d9d-edf56678b24f\" data-message-author-role=\"assistant\">\n<div>\n<p>Manage transactions requiring your approval through ensuring smooth and secure financial oversight.</p>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>"
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=05336281970f791070d034100153af43"/>
+</record_update>

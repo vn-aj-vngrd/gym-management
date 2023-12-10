@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_notification_next_experience_content">
+    <sys_notification_next_experience_content action="INSERT_OR_UPDATE">
+        <action_name/>
+        <action_payload/>
+        <active>true</active>
+        <is_default>false</is_default>
+        <message><![CDATA[Hi, ${member.name}. Your enrollment for workout plan ${workout_plan.number} has been approved.]]></message>
+        <message_heading><![CDATA[Approved Workout Plan Enrollment]]></message_heading>
+        <name>Approved Workout Plan Enrollment</name>
+        <notification display_value="Gym - Approved Workout Enrollment">1687affb9776351070d034100153af89</notification>
+        <route display_value="Next Experience Route">bccd1214533201107cd3ddeeff7b1289</route>
+        <sys_class_name>sys_notification_next_experience_content</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-06 09:42:51</sys_created_on>
+        <sys_id>f578277f9776351070d034100153af6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approved Workout Plan Enrollment</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>sys_notification_next_experience_content_f578277f9776351070d034100153af6f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-06 09:42:51</sys_updated_on>
+        <use_action>false</use_action>
+    </sys_notification_next_experience_content>
+</record_update>

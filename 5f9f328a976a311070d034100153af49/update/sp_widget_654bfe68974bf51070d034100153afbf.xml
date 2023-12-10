@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>  .item-card-column {
+    -ms-flex: 0 0 100%;
+    -moz-box-flex: 0 0 100%;
+    -moz-flex: 0 0 100%;
+    -webkit-box-flex: 0 0 100%;
+    -webkit-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .item-card-column {
+      -ms-flex: 0 0 50%;
+      -moz-box-flex: 0 0 50%;
+      -moz-flex: 0 0 50%;
+      -webkit-box-flex: 0 0 50%;
+      -webkit-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+      width: 50%;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .item-card-column {
+      -ms-flex: 0 0 33.33333%;
+      -moz-box-flex: 0 0 33.33333%;
+      -moz-flex: 0 0 33.33333%;
+      -webkit-box-flex: 0 0 33.33333%;
+      -webkit-flex: 0 0 33.33333%;
+      flex: 0 0 33.33333%;
+      max-width: 33.33333%;
+      width: 33.33333%;
+    }
+  }
+
+  .sc-panel {
+    margin-bottom: 0px;
+    border-radius: 0px;
+  }</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>gym_catalog</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Gym Catalog</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+   var tableName = options.table_name || 'sc_cat_item_producer';
+
+   data.recordProducers = [];
+   var gr = new GlideRecord(tableName);
+   var allowedRecordProducers = [];
+
+   if (gs.hasRole('gym_manager')) {
+      allowedRecordProducers.push('Create Workout Plan');
+   } 
+
+   if (gs.hasRole('gym_manager') || gs.hasRole('gym_trainer') || gs.hasRole('gym_member')) {
+      allowedRecordProducers.push('Cancel Workout Plan', 'Enroll Workout Plan');
+   }
+
+   // Only query if there are allowed record producers
+   if (allowedRecordProducers.length > 0) {
+      gr.addQuery('name', 'IN', allowedRecordProducers);
+      gr.query();
+
+      while (gr.next()) {
+         var sysId = gr.getValue('sys_id');
+         var formLink = 'gym-management?id=sc_cat_item&sys_id=' + sysId; // Adjust the URL pattern as needed
+
+         data.recordProducers.push({
+            name: gr.getValue('name'),
+            shortDescription: gr.getValue('short_description'),
+            formLink: formLink,
+            // Add more fields as needed
+         });
+      }
+   }
+})();
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-08 14:20:04</sys_created_on>
+        <sys_id>654bfe68974bf51070d034100153afbf</sys_id>
+        <sys_mod_count>31</sys_mod_count>
+        <sys_name>Gym Catalog</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>sp_widget_654bfe68974bf51070d034100153afbf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-08 15:08:59</sys_updated_on>
+        <template><![CDATA[<h1 class="font-thin m-t-none" id="record_producers_header">Gym Catalog</h1>
+
+<div class="row item-list-style-type-none item-card-row" role="list" aria-labelledby="record_producers_header">
+  <div class="col-md-4 item-card-column" ng-repeat="producer in data.recordProducers" role="listitem">
+    <div class="panel panel-default item-card b sc-panel">
+      <a href="{{ producer.formLink }}" class="panel-body block height-100" onclick='window.GlideWebAnalytics.trackEvent("Service Catalog", "Record Producers", "Producer Clicked");'>
+        <div>
+          <h2 class="h4 m-t-none m-b-xs text-overflow-ellipsis" title="{{::producer.name}}">{{::producer.name}}</h2>
+          <div class="text-muted item-short-desc catalog-text-wrap">{{::producer.shortDescription}}</div>
+        </div>
+      </a>
+      <div class="panel-footer b">
+        <a aria-label="${View Details} {{::producer.name}}" href="{{ producer.formLink }}" class="text-muted" onclick='window.GlideWebAnalytics.trackEvent("Service Catalog", "Record Producers", "Producer Clicked");'>${View Details}</a>
+      </div>
+    </div>
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

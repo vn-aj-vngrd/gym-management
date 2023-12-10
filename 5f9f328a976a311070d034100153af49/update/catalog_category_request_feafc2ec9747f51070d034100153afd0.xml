@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_category_request">
+    <catalog_category_request action="INSERT_OR_UPDATE">
+        <category/>
+        <comments/>
+        <department display_value="Finance">a581ab703710200044e0bfc8bcbe5de8</department>
+        <department_or_group>department</department_or_group>
+        <due_date/>
+        <editors/>
+        <group/>
+        <manager display_value="Bridgett Retort">ca826bf03710200044e0bfc8bcbe5d92</manager>
+        <name>test</name>
+        <number>CCR0001001</number>
+        <parent_category display_value="Departmental Services">95fc11615f1211001c9b2572f2b477c6</parent_category>
+        <published>false</published>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <state>requested</state>
+        <sys_class_name>catalog_category_request</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-08 11:09:46</sys_created_on>
+        <sys_id>feafc2ec9747f51070d034100153afd0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>CCR0001001</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>catalog_category_request_feafc2ec9747f51070d034100153afd0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-08 11:10:30</sys_updated_on>
+        <table/>
+        <table_name/>
+    </catalog_category_request>
+</record_update>

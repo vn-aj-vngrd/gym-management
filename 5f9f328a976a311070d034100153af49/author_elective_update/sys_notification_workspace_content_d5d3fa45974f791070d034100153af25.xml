@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_notification_workspace_content">
+    <sys_notification_workspace_content action="DELETE">
+        <active>true</active>
+        <is_default>false</is_default>
+        <name>Newly Assigned Workout Plan (workspace)</name>
+        <notification display_value="Gym - Newly Assigned Workout Plan">da07a7fb9776351070d034100153af52</notification>
+        <route display_value="Agent Workspace">cb1af195872023002941b53046cb0b4e</route>
+        <sys_class_name>sys_notification_workspace_content</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-10 03:04:56</sys_created_on>
+        <sys_id>d5d3fa45974f791070d034100153af25</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Newly Assigned Workout Plan (workspace)</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>sys_notification_workspace_content_d5d3fa45974f791070d034100153af25</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-10 03:04:56</sys_updated_on>
+    </sys_notification_workspace_content>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gym Management">5f9f328a976a311070d034100153af49</application>
+        <file_path/>
+        <instance_id>ad1a86eddb54e9103050ac44d496196f</instance_id>
+        <instance_name>dev147213</instance_name>
+        <name>sys_notification_workspace_content_d5d3fa45974f791070d034100153af25</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_notification_workspace_content"><sys_notification_workspace_content action="INSERT_OR_UPDATE"><active>true</active><is_default>false</is_default><name>Newly Assigned Workout Plan (workspace)</name><notification display_value="Gym - Newly Assigned Workout Plan">da07a7fb9776351070d034100153af52</notification><route display_value="Agent Workspace">cb1af195872023002941b53046cb0b4e</route><sys_class_name>sys_notification_workspace_content</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-12-10 03:04:56</sys_created_on><sys_id>d5d3fa45974f791070d034100153af25</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Newly Assigned Workout Plan (workspace)</sys_name><sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package><sys_policy/><sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope><sys_update_name>sys_notification_workspace_content_d5d3fa45974f791070d034100153af25</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-12-10 03:04:56</sys_updated_on></sys_notification_workspace_content></record_update>]]></payload>
+        <payload_hash>173318758</payload_hash>
+        <record_name>Newly Assigned Workout Plan (workspace)</record_name>
+        <reverted_from/>
+        <source>9348038697aa311070d034100153af46</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-10 03:04:56</sys_created_on>
+        <sys_id>63e3ba45974f791070d034100153aff3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c51af5ee90000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-10 03:04:56</sys_updated_on>
+        <type>Notification Workspace Content</type>
+        <update_guid>a7e3ba45114f791014eca0d269aa61f2</update_guid>
+        <update_guid_history>a7e3ba45114f791014eca0d269aa61f2:173318758</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-10 03:08:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_notification_workspace_content">sys_notification_workspace_content</sys_db_object>
+        <sys_id>4e0c361e403249a8a77a6f1497430090</sys_id>
+        <sys_metadata>d5d3fa45974f791070d034100153af25</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Newly Assigned Workout Plan (workspace)</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_scope_delete display_value="">6ba2a1389bb44300b26741b3861b1000</sys_scope_delete>
+        <sys_update_name>sys_notification_workspace_content_d5d3fa45974f791070d034100153af25</sys_update_name>
+        <sys_update_version display_value="sys_notification_workspace_content_d5d3fa45974f791070d034100153af25">63e3ba45974f791070d034100153aff3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-10 03:08:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

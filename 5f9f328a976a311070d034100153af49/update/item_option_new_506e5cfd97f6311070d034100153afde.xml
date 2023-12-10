@@ -2,7 +2,7 @@
     <item_option_new action="INSERT_OR_UPDATE">
         <active>true</active>
         <attributes/>
-        <cat_item display_value="Enroll Workout Plan">ccb7547597f6311070d034100153afbb</cat_item>
+        <cat_item display_value="">ccb7547597f6311070d034100153afbb</cat_item>
         <category/>
         <choice_direction>down</choice_direction>
         <choice_field>short_description</choice_field>
@@ -42,7 +42,7 @@
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
         <name>choose_a_workout</name>
-        <order/>
+        <order>100</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
@@ -79,14 +79,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-29 13:53:11</sys_created_on>
         <sys_id>506e5cfd97f6311070d034100153afde</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Choose a Workout</sys_name>
         <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
         <sys_policy/>
         <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
         <sys_update_name>item_option_new_506e5cfd97f6311070d034100153afde</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-29 14:45:41</sys_updated_on>
+        <sys_updated_on>2023-12-03 05:00:56</sys_updated_on>
         <table/>
         <tooltip>Choose a Workout</tooltip>
         <type>8</type>

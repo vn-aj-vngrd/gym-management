@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Enroll Workout Plan">ccb7547597f6311070d034100153afbb</catalog_item>
+        <catalog_variable>IO:506e5cfd97f6311070d034100153afde</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-03 12:46:11</sys_created_on>
+        <sys_id>62b5f0c39736311070d034100153af3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>choose_a_workout</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_62b5f0c39736311070d034100153af3e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-03 12:46:11</sys_updated_on>
+        <table/>
+        <ui_policy display_value="Prevent multiple orders">081c4b7a973a711070d034100153af3d</ui_policy>
+        <variable>choose_a_workout</variable>
+        <variable_set/>
+        <visible>ignore</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gym Management">5f9f328a976a311070d034100153af49</application>
+        <file_path/>
+        <instance_id>ad1a86eddb54e9103050ac44d496196f</instance_id>
+        <instance_name>dev147213</instance_name>
+        <name>catalog_ui_policy_action_62b5f0c39736311070d034100153af3e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Enroll Workout Plan">ccb7547597f6311070d034100153afbb</catalog_item><catalog_variable>IO:506e5cfd97f6311070d034100153afde</catalog_variable><cleared>false</cleared><disabled>true</disabled><field/><mandatory>ignore</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-12-03 12:46:11</sys_created_on><sys_id>62b5f0c39736311070d034100153af3e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>choose_a_workout</sys_name><sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package><sys_policy/><sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope><sys_update_name>catalog_ui_policy_action_62b5f0c39736311070d034100153af3e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-12-03 12:46:11</sys_updated_on><table/><ui_policy display_value="Prevent multiple orders">081c4b7a973a711070d034100153af3d</ui_policy><variable>choose_a_workout</variable><variable_set/><visible>ignore</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>-767911615</payload_hash>
+        <record_name>choose_a_workout</record_name>
+        <reverted_from/>
+        <source>9348038697aa311070d034100153af46</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-03 12:46:13</sys_created_on>
+        <sys_id>96d574c39736311070d034100153afca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c2fb708dd0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-03 12:46:13</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>dad574c3d63631109a49d5adaec3d9c9</update_guid>
+        <update_guid_history>dad574c3d63631109a49d5adaec3d9c9:-767911615</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="choose_a_workout">bc0678c39736311070d034100153af4c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-03 12:46:56</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>002d899e04e34a72802aa2fcf05d2ec9</sys_id>
+        <sys_metadata>62b5f0c39736311070d034100153af3e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>choose_a_workout</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_scope_delete display_value="">6ba2a1389bb44300b26741b3861b1000</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_62b5f0c39736311070d034100153af3e</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_62b5f0c39736311070d034100153af3e">96d574c39736311070d034100153afca</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-03 12:46:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

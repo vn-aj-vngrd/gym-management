@@ -5,16 +5,15 @@
         <color>default</color>
         <css/>
         <display_field/>
-        <field_list>number,state,member,workout_plan,approval,sys_created_on</field_list>
-        <filter table="x_1117801_gym_mngt_transactions">approval=requested ^ assigned_to=javascript:gs.getUserID()<item display_value="Requested" endquery="false" field="approval" goto="false" newquery="false" operator="=" or="false" value="requested"/>
-            <item endquery="false" field="assigned_to" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getUserID()"/>
+        <field_list>number,state,approval,member,workout_plan,sys_created_on</field_list>
+        <filter table="x_1117801_gym_mngt_transactions">approval=requested<item display_value="Requested" endquery="false" field="approval" goto="false" newquery="false" operator="=" or="false" value="requested"/>
         </filter>
         <glyph>th-list</glyph>
         <id/>
-        <maximum_entries>5</maximum_entries>
-        <order>1</order>
+        <maximum_entries>15</maximum_entries>
+        <order>2</order>
         <order_by/>
-        <order_direction>asc</order_direction>
+        <order_direction>desc</order_direction>
         <roles/>
         <short_description/>
         <size>md</size>
@@ -25,16 +24,16 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-11-30 12:56:18</sys_created_on>
         <sys_id>e06b55c297be711070d034100153afa1</sys_id>
-        <sys_mod_count>15</sys_mod_count>
-        <sys_name>My Approval</sys_name>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>My Approvals</sys_name>
         <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
         <sys_policy/>
         <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
         <sys_update_name>sp_instance_table_e06b55c297be711070d034100153afa1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-11-30 13:40:05</sys_updated_on>
+        <sys_updated_on>2023-12-10 01:51:52</sys_updated_on>
         <table>x_1117801_gym_mngt_transactions</table>
-        <title>My Approval</title>
+        <title>My Approvals</title>
         <url/>
         <widget_parameters/>
     </sp_instance_table>
