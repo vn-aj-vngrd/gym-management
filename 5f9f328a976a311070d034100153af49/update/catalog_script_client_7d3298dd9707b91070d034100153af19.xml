@@ -7,7 +7,7 @@
         <applies_sc_task>false</applies_sc_task>
         <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
-        <cat_item/>
+        <cat_item display_value="Create Workout Plan">fc20901d9707b91070d034100153afc8</cat_item>
         <cat_variable/>
         <condition/>
         <description/>
@@ -15,41 +15,55 @@
         <global>true</global>
         <isolate_script>true</isolate_script>
         <messages/>
-        <name>Cancel Workout Plan On Submit</name>
+        <name>Create Workout Plan Rules</name>
         <order/>
         <published_ref/>
         <script><![CDATA[function onSubmit() {
-  // Get the sys_id of the existing record
-  var sys_id = producer.u_reference.sys_id;
-
-  // Retrieve the existing record
-  var record = new GlideRecord('x_1117801_gym_mngt_transactions');
-  record.get(sys_id);
-
-  // Update the desired fields with the submitted data
-  record.state = 4;
-
-  // Update the record
-  record.update();
-}]]></script>
+   //Type appropriate comment here, and begin script below
+	var estCompletion = g_form.getValue("estimated_completion");
+	var workoutValues = g_form.getValue("workouts").split(',');
+	
+	var isEstInvalid = estCompletion === '00:00:00';
+	var isLessThanFive = workoutValues.length < 5;
+	var hasDuplicates = new Set(workoutValues).size !== workoutValues.length;
+	
+	if (isLessThanFive || hasDuplicates || isEstInvalid) {
+		if (isEstInvalid) {
+			g_form.addErrorMessage("Please enter a valid estimated completion time");
+		}
+		
+		if (isLessThanFive) {
+			g_form.addErrorMessage("Workout plans should contain a minimum of 5 workouts.");
+		}
+		
+		if (hasDuplicates) {
+			g_form.addErrorMessage("Workout plans should not contain duplicate workouts.");
+		}
+		
+		return false;
+	}
+	
+	return true;
+}
+]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-12-07 14:45:14</sys_created_on>
+        <sys_created_on>2023-12-10 09:57:32</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>f52c5d549703b51070d034100153afcf</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Cancel Workout Plan On Submit</sys_name>
+        <sys_id>7d3298dd9707b91070d034100153af19</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Create Workout Plan Rules</sys_name>
         <sys_overrides/>
         <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
         <sys_policy/>
         <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
-        <sys_update_name>catalog_script_client_f52c5d549703b51070d034100153afcf</sys_update_name>
+        <sys_update_name>catalog_script_client_7d3298dd9707b91070d034100153af19</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-12-07 14:52:47</sys_updated_on>
+        <sys_updated_on>2023-12-10 10:00:36</sys_updated_on>
         <table/>
         <type>onSubmit</type>
-        <ui_type>0</ui_type>
+        <ui_type>10</ui_type>
         <variable_set/>
         <view/>
     </catalog_script_client>

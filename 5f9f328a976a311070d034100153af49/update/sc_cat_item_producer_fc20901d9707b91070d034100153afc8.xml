@@ -7,7 +7,7 @@
         <billable>false</billable>
         <can_cancel>false</can_cancel>
         <category display_value="Gym">4e47147597f6311070d034100153affc</category>
-        <checked_out>false</checked_out>
+        <checked_out/>
         <cost>0</cost>
         <custom_cart/>
         <delivery_plan display_value="DEFAULT">523da512c611228900811a37c97c2014</delivery_plan>
@@ -30,7 +30,7 @@
         <mobile_picture/>
         <mobile_picture_type>use_desktop_picture</mobile_picture_type>
         <model/>
-        <name>Workout Plan Producer</name>
+        <name>Create Workout Plan</name>
         <no_attachment_v2>true</no_attachment_v2>
         <no_cart>false</no_cart>
         <no_cart_v2>false</no_cart_v2>
@@ -41,7 +41,7 @@
         <no_quantity>false</no_quantity>
         <no_quantity_v2>false</no_quantity_v2>
         <no_search>false</no_search>
-        <no_wishlist_v2>false</no_wishlist_v2>
+        <no_wishlist_v2>true</no_wishlist_v2>
         <omit_price>false</omit_price>
         <order>0</order>
         <ordered_item_link/>
@@ -53,7 +53,7 @@
 * To access the variables, use `producer.var1` where var1 is the name of the variable
 * To access the Record Producer use `cat_item`
 */]]></post_insert_script>
-        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=3c8f84c8970b351070d034100153afe0&amp;sysparm_preview=true", "summary");</preview>
+        <preview>JavaScript: popupOpenStandard("com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_id=fc20901d9707b91070d034100153afc8&amp;sysparm_preview=true", "summary");</preview>
         <price>0</price>
         <published_ref/>
         <recurring_frequency/>
@@ -78,23 +78,24 @@
 * Don't use `current.setValue('sys_class_name', 'xxx')` as this will trigger reparent flow and can cause data loss
 * Avoid `current.setAbortAction()` and generate a separate record
 * Use `producer.var1` to access variables
-*/]]></script>
-        <short_description/>
+*/
+producer.portal_redirect = "gym-management?id=gym_home"; ]]></script>
+        <short_description>Create a workout plan here, a minimum of 5 workouts per plan.</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
-        <state>published</state>
+        <state/>
         <sys_class_name>sc_cat_item_producer</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-12-06 12:33:25</sys_created_on>
-        <sys_id>3c8f84c8970b351070d034100153afe0</sys_id>
-        <sys_mod_count>8</sys_mod_count>
-        <sys_name>Workout Plan Producer</sys_name>
+        <sys_created_on>2023-12-10 09:48:32</sys_created_on>
+        <sys_id>fc20901d9707b91070d034100153afc8</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Create Workout Plan</sys_name>
         <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
         <sys_policy/>
         <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
-        <sys_update_name>sc_cat_item_producer_3c8f84c8970b351070d034100153afe0</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-12-06 12:59:16</sys_updated_on>
+        <sys_update_name>sc_cat_item_producer_fc20901d9707b91070d034100153afc8</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-12-10 10:00:36</sys_updated_on>
         <table_name>x_1117801_gym_mngt_workout_plans</table_name>
         <taxonomy_topic/>
         <template/>
@@ -102,29 +103,29 @@
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>8</version>
+        <version>13</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>
         <visible_standalone>true</visible_standalone>
         <workflow/>
     </sc_cat_item_producer>
-    <sys_translated_text action="delete_multiple" query="documentkey=3c8f84c8970b351070d034100153afe0"/>
-    <fx_price action="delete_multiple" query="id=3c8f84c8970b351070d034100153afe0"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=fc20901d9707b91070d034100153afc8"/>
+    <fx_price action="delete_multiple" query="id=fc20901d9707b91070d034100153afc8"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price</field>
-        <id>3c8f84c8970b351070d034100153afe0</id>
+        <id>fc20901d9707b91070d034100153afc8</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-12-06 12:33:25</sys_created_on>
-        <sys_id>b7af48c8970b351070d034100153afb4</sys_id>
+        <sys_created_on>2023-12-10 09:48:32</sys_created_on>
+        <sys_id>6b405c1d9707b91070d034100153af47</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-12-06 12:33:25</sys_updated_on>
+        <sys_updated_on>2023-12-10 09:48:32</sys_updated_on>
         <table>sc_cat_item_producer</table>
         <type>calculated</type>
     </fx_price>

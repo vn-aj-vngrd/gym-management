@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Create Workout Plan">3c8f84c8970b351070d034100153afe0</sc_cat_item>
+        <sc_category display_value="Gym">4e47147597f6311070d034100153affc</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-06 12:46:07</sys_created_on>
+        <sys_id>049218cc970b351070d034100153afce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Gym.Workout Plan Producer</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>sc_cat_item_category_049218cc970b351070d034100153afce</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-06 12:46:07</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gym Management">5f9f328a976a311070d034100153af49</application>
+        <file_path/>
+        <instance_id>ad1a86eddb54e9103050ac44d496196f</instance_id>
+        <instance_name>dev147213</instance_name>
+        <name>sc_cat_item_category_049218cc970b351070d034100153afce</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Create Workout Plan">3c8f84c8970b351070d034100153afe0</sc_cat_item><sc_category display_value="Gym">4e47147597f6311070d034100153affc</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-12-06 12:46:07</sys_created_on><sys_id>049218cc970b351070d034100153afce</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Gym.Workout Plan Producer</sys_name><sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package><sys_policy/><sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope><sys_update_name>sc_cat_item_category_049218cc970b351070d034100153afce</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-12-06 12:46:07</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>1240531979</payload_hash>
+        <record_name>Gym.Workout Plan Producer</record_name>
+        <reverted_from/>
+        <source>36cecc599707b91070d034100153afe4</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-10 09:41:55</sys_created_on>
+        <sys_id>bace00999707b91070d034100153af11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c531ad26e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-10 09:41:55</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>7ece0099f307b91017cdfca08c792610</update_guid>
+        <update_guid_history>7ece0099f307b91017cdfca08c792610:1240531979,129594c0ad4b3510c92f5e0578d10ca8:682602113,01008c1dc783b91047fef4d8d48dbd0a:1282851455,ce9258ccd50b35100f4e9382d5d8e73c:682602113</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Gym.Workout Plan Producer">0b10581d9707b91070d034100153afd9</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-10 09:47:40</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>0594867b972f4f788a5cbab6cf577810</sys_id>
+        <sys_metadata>049218cc970b351070d034100153afce</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Gym.Workout Plan Producer</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_scope_delete display_value="">6ba2a1389bb44300b26741b3861b1000</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_049218cc970b351070d034100153afce</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_049218cc970b351070d034100153afce">bace00999707b91070d034100153af11</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-10 09:47:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -6,7 +6,7 @@
         <availability>on_desktop</availability>
         <billable>false</billable>
         <can_cancel>false</can_cancel>
-        <category/>
+        <category display_value="Gym">4e47147597f6311070d034100153affc</category>
         <checked_out>false</checked_out>
         <cost>0</cost>
         <custom_cart/>
@@ -31,7 +31,7 @@
         <mobile_picture_type>use_desktop_picture</mobile_picture_type>
         <model/>
         <name>Cancel Workout Plan</name>
-        <no_attachment_v2>false</no_attachment_v2>
+        <no_attachment_v2>true</no_attachment_v2>
         <no_cart>false</no_cart>
         <no_cart_v2>false</no_cart_v2>
         <no_delivery_time_v2>false</no_delivery_time_v2>
@@ -41,7 +41,7 @@
         <no_quantity>false</no_quantity>
         <no_quantity_v2>false</no_quantity_v2>
         <no_search>false</no_search>
-        <no_wishlist_v2>false</no_wishlist_v2>
+        <no_wishlist_v2>true</no_wishlist_v2>
         <omit_price>false</omit_price>
         <order>0</order>
         <ordered_item_link/>
@@ -57,7 +57,7 @@
         <price>0</price>
         <published_ref/>
         <recurring_frequency/>
-        <redirect_url>generated_record</redirect_url>
+        <redirect_url>catalog_home</redirect_url>
         <request_method/>
         <roles/>
         <save_options/>
@@ -68,7 +68,7 @@
 * To access the variables, use `producer.var1` where var1 is the name of the variable
 * To access the Record Producer use `cat_item`
 */]]></save_script>
-        <sc_catalogs/>
+        <sc_catalogs>094fc8b997b6311070d034100153af10</sc_catalogs>
         <sc_ic_item_staging/>
         <sc_ic_version/>
         <sc_template/>
@@ -78,8 +78,18 @@
 * Don't use `current.setValue('sys_class_name', 'xxx')` as this will trigger reparent flow and can cause data loss
 * Avoid `current.setAbortAction()` and generate a separate record
 * Use `producer.var1` to access variables
-*/]]></script>
-        <short_description/>
+*/
+
+var gr = new GlideRecord('x_1117801_gym_mngt_transactions');
+gr.get(producer.choose_a_transaction);
+
+if (gr.isValid()) {
+  gr.state = 4;
+  gr.update();
+}
+
+producer.portal_redirect = "gym-management?id=gym_home"; ]]></script>
+        <short_description>Cancel your current workout plan here.</short_description>
         <show_variable_help_on_load>false</show_variable_help_on_load>
         <start_closed>false</start_closed>
         <state>published</state>
@@ -87,14 +97,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-12-07 12:31:08</sys_created_on>
         <sys_id>9f385ddc97cf751070d034100153afa3</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Cancel Workout Plan</sys_name>
         <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
         <sys_policy/>
         <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
         <sys_update_name>sc_cat_item_producer_9f385ddc97cf751070d034100153afa3</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-12-07 12:38:55</sys_updated_on>
+        <sys_updated_on>2023-12-10 09:30:23</sys_updated_on>
         <table_name>x_1117801_gym_mngt_transactions</table_name>
         <taxonomy_topic/>
         <template/>
@@ -102,7 +112,7 @@
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>3</version>
+        <version>10</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>

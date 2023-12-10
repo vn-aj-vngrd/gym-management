@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="DELETE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item/>
+        <cat_variable/>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Cancel Workout Plan On Submit</name>
+        <order/>
+        <published_ref/>
+        <script><![CDATA[function onSubmit() {
+  // Get the sys_id of the existing record
+  var sys_id = producer.u_reference.sys_id;
+
+  // Retrieve the existing record
+  var record = new GlideRecord('x_1117801_gym_mngt_transactions');
+  record.get(sys_id);
+
+  // Update the desired fields with the submitted data
+  record.state = 4;
+
+  // Update the record
+  record.update();
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-07 14:45:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f52c5d549703b51070d034100153afcf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Cancel Workout Plan On Submit</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_update_name>catalog_script_client_f52c5d549703b51070d034100153afcf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-07 14:52:47</sys_updated_on>
+        <table/>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Gym Management">5f9f328a976a311070d034100153af49</application>
+        <file_path/>
+        <instance_id>ad1a86eddb54e9103050ac44d496196f</instance_id>
+        <instance_name>dev147213</instance_name>
+        <name>catalog_script_client_f52c5d549703b51070d034100153afcf</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="catalog_script_client"&gt;&lt;catalog_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_catalog&gt;true&lt;/applies_catalog&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;applies_req_item&gt;false&lt;/applies_req_item&gt;&lt;applies_sc_task&gt;false&lt;/applies_sc_task&gt;&lt;applies_target_record&gt;false&lt;/applies_target_record&gt;&lt;applies_to&gt;item&lt;/applies_to&gt;&lt;cat_item/&gt;&lt;cat_variable/&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Cancel Workout Plan On Submit&lt;/name&gt;&lt;order/&gt;&lt;published_ref/&gt;&lt;script&gt;&lt;![CDATA[function onSubmit() {
+  // Get the sys_id of the existing record
+  var sys_id = producer.u_reference.sys_id;
+
+  // Retrieve the existing record
+  var record = new GlideRecord('x_1117801_gym_mngt_transactions');
+  record.get(sys_id);
+
+  // Update the desired fields with the submitted data
+  record.state = 4;
+
+  // Update the record
+  record.update();
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;catalog_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-12-07 14:45:14&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f52c5d549703b51070d034100153afcf&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Cancel Workout Plan On Submit&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Gym Management" source="x_1117801_gym_mngt"&gt;5f9f328a976a311070d034100153af49&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Gym Management"&gt;5f9f328a976a311070d034100153af49&lt;/sys_scope&gt;&lt;sys_update_name&gt;catalog_script_client_f52c5d549703b51070d034100153afcf&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-12-07 14:52:47&lt;/sys_updated_on&gt;&lt;table/&gt;&lt;type&gt;onSubmit&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;variable_set/&gt;&lt;view/&gt;&lt;/catalog_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>523243438</payload_hash>
+        <record_name>Cancel Workout Plan On Submit</record_name>
+        <reverted_from/>
+        <source>a3f10c5197c3b91070d034100153af23</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-10 08:46:04</sys_created_on>
+        <sys_id>6c024c5197c3b91070d034100153af72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18c52e7acf00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-10 08:46:04</sys_updated_on>
+        <type>Catalog Client Scripts</type>
+        <update_guid>5b2979143583b51087fb2d8d3426cd77</update_guid>
+        <update_guid_history>5b2979143583b51087fb2d8d3426cd77:523243438,9810045d9083b910d2ef878e5f798888:-155770462,5b2979143583b51087fb2d8d3426cd77:523243438,b477b9d0ac83b510af8024aedab209a4:1349916899</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Cancel Workout Plan On Submit">0935841997c3b91070d034100153af56</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-12-10 09:00:02</sys_created_on>
+        <sys_db_object display_value="" name="catalog_script_client">catalog_script_client</sys_db_object>
+        <sys_id>a6f1bff7c1354084b40f411cce8512b9</sys_id>
+        <sys_metadata>f52c5d549703b51070d034100153afcf</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cancel Workout Plan On Submit</sys_name>
+        <sys_package display_value="Gym Management" source="x_1117801_gym_mngt">5f9f328a976a311070d034100153af49</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Gym Management">5f9f328a976a311070d034100153af49</sys_scope>
+        <sys_scope_delete display_value="">6ba2a1389bb44300b26741b3861b1000</sys_scope_delete>
+        <sys_update_name>catalog_script_client_f52c5d549703b51070d034100153afcf</sys_update_name>
+        <sys_update_version display_value="catalog_script_client_f52c5d549703b51070d034100153afcf">6c024c5197c3b91070d034100153af72</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-12-10 09:00:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
